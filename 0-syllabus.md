@@ -1,10 +1,10 @@
-# 课程目标
+# 教学目标
 
 - 对数据工程，数据科学获得大体的印象
 - 了解数据工程师的成长路径，知道如何去获取相关资源
 - 掌握相关工具完成数据获取和分析的任务
 
-# 教学目标
+# 知识点目标
 
 - 了解 Python 的语法，基本数据结构，会使用条件，循环和输入/输出，知道如何输出数据到文件
 - 了解网站、网页、请求、响应的大致原理
@@ -66,6 +66,7 @@
 - 编辑器
 - Python3
 - Pip
+- Jupyter Notebooks
 
 # 辅助材料
 
@@ -73,3 +74,8 @@ Cheatsheet
 
 - 正面：Python 语法和常用函数
 - 反面：Pandas 和各种工具函数, Chrome 拷贝选择器的图示
+
+# Show Case
+
+- Jupyter Notebook?
+- A server for upload and compile?
