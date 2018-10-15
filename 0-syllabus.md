@@ -79,3 +79,23 @@ Cheatsheet
 
 - Jupyter Notebook?
 - A server for upload and compile?
+
+# Python 数据处理例子
+
+https://blog.plover.com/lang/ambiguous.html -- 使用词典找出西班牙语里的多义词, 改写成对应的 python 版是：
+
+    with open('dict.txt') as f:
+        lines = f.read()
+    reverse_dict = {}
+    for line in lines.split("\n"):
+        en_word, es_words = line.split(" ", 1)
+        for es_word in es_words.split(","):
+            if es_word not in reverse_dict:
+                reverse_dict[es_word] = []
+            reverse_dict[es_word].append(en_word)
+    for es_word, en_words in reverse_dict.items():
+        if len(en_words) > 1:
+            en_words = ",".join(en_words)
+            print(f"{es_word}: {en_words}")
+
+涉及知识点：打印，文件读取，基本字符串操作（split, join)，迭代 list / dict, 格式化字符串
