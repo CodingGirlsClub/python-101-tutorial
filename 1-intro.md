@@ -48,7 +48,7 @@
 
 如果没有学校的条件，还可以参加很多优秀的网络课程 https://www.coursera.org/specializations/jhu-data-science
 
-## 数据分析职业的分支
+# 数据分析职业的分支
 
 - 业务分析员 - 用技术提升业务效率和产出
 - 数据分析师 - 运用数据模型解决问题
@@ -62,7 +62,7 @@
 
 参考 https://www.mastersindatascience.org/careers/data-analyst/
 
-## 一些问题
+# 一些问题
 
 Q: 我想成为数据工程师，数学不好怎么办？
 
