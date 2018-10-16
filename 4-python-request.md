@@ -43,14 +43,18 @@ HTTP 响应由以下部分组成：
 
 PyPI: [Python 包索引](https://pypi.org/)（Python Package Index) 是一个软件仓库，帮助你搜索、安装和分享 Python 软件。开放的 PyPI 上丰富的三方库是 Python 成功的要素之一。
 
-Requests 是一个方便的 HTTP 请求库。在命令行使用 pip 从 PyPI 上安装 requests：
+[Requests](http://docs.python-requests.org/en/master/) 是一个方便的 HTTP 请求库。在命令行使用 pip 从 PyPI 上安装 requests：
 
     pip install requests
 
 注意：PyPI 上的库多数是开源的或者免费的，但是使用新的库时最好注意一下使用条款。
 
+技巧：站在巨人的肩膀上 - 在 PyPI 或者 GitHub 上搜索你需要的软件工具。
+
 # Requests 的使用
 
     import requests
     response = requests.get('https://c.xkcd.com/random/comic/')
-    response.text # 看到网页的源代码
+    print(response.text) # 打印网页的 HTML 源代码
+
+可以看到 HTML 的内容 `"<!DOCTYPE html>\n<html>……"`，下面我们先讲解一下 Python 进阶语法，然后再介绍如何从 HTML 中提取信息。
