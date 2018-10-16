@@ -30,7 +30,7 @@ Donald Knuth 说过：一个人并不真正了解一件事，除非他把一件�
 
 ** 程序出错 **
 
-有一个说法叫：计算机很笨却听话（The computer is very dumb but obidient）。当遇到语法错误时，即使是很微小的错误，它也不会自己修正它。程序员每天都会遇到很多各种语法错误。只要仔细阅读错误信息，找到并修正就可以了。
+有一个说法叫：计算机很笨却听话（The computer is very dumb but obedient）。当遇到语法错误时，即使是很微小的错误，它也不会自己修正它。程序员每天都会遇到很多各种语法错误。只要仔细阅读错误信息，找到并修正就可以了。
 
 参考阅读: http://guyhaas.com/bfoit/Intro_to_Programming/Programming.html
 
