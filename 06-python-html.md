@@ -80,7 +80,15 @@ CSS 是层叠样式表 (Cascade Stylesheet) 的缩写。
     from bs4 import BeautifulSoup
     soup = BeautifulSoup(page) # 创建一个 soup 对象
 
-    soup.select('#question')
+    matched_elements = soup.select('#question')
+    links = soup.select('a')
 
-    for link in soup.find_all("a"):
-    
+`select` 函数返回的结果是列表, 回忆之前学的列表，我们可以用下标访问：
+
+    question = matched_elements[0].text # element.text 是
+    print(question)
+
+也可以遍历它：
+
+    for a in links:
+        print(a['href'])
