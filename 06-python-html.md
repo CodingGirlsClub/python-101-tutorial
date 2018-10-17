@@ -17,7 +17,7 @@ HTML 是超文本标记语言（hypertext markup language）的缩写。
 
 - 块 `<div>`
 - 行内 `<span>`
-- 链接 `<a>`
+- 链接 `<a>`，爬虫往往需要特别关注它的 `href` 属性
 - 图片 `<img>`
 - 视频 `<video>`
 
@@ -25,20 +25,62 @@ HTML 是超文本标记语言（hypertext markup language）的缩写。
 
 常见的属性
 
-- id 用来指定元素唯一的的身份证号码，对应选择器 `#`
-- class 表示元素属于哪些类别，对应选择器 `.`
+- `href` 链接所指向的地址
+- `id` 用来指定元素唯一的的身份证号码
+- `class` 表示元素属于哪些类别，多个类别之间用空格隔开
 
-# 选择器
+# CSS 选择器
 
-Mozilla
+CSS 是层叠样式表 (Cascade Stylesheet) 的缩写。
 
-https://developer.mozilla.org/zh-CN/docs/Learn/CSS/Introduction_to_CSS/Selectors
+（常见语病：「CSS 样式表」。「S」和「样式表」同义重复了，直接说「CSS」即可）
+
+在 CSS 中，选择器（selector）可以用于定位我们想要样式化的 HTML 元素。虽然我们这里不需要给 HTML 元素指定外观和样式，但选择器可以帮助我们选取需要的元素。
+
+- 元素选择器 `div`，`span`，`a`
+- id 选择器
+- class 选择器
+
+例：假设有以下的 HTML 页面
+
+    <p id="question">What color do you like?</p>
+    <div>I like blue.</div>
+    <p class="paragraph red">I prefer red!</p>
+
+- 用 `#question` 选择器可以获得 `<p id="question">What color do you like?</p>`
+- 用 `div` 选择器可以获得 `<div>I like blue.</div>`
+- 用 `.red` 选择器可以获得 `<p class="paragraph red">I prefer red!</p>`
+
+组合选择器
+
+`div .red a` 匹配 `<div>` 元素里面的 `red` 类任意元素里面的 `<a>` 元素
 
 # 快速获取选择器
 
-打开 Chrome 开发者工具，选择对应的元素，右键复制选择器
+打开网页，使用 Chrome 开发者工具，选择对应的元素，右键复制选择器
 
 ![](copy-selector.png)
 
-# 通过选择器提取网页数据
+# 用 Python 解析 HTML
 
+[Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/bs4/doc.zh/) 是一个可以从 HTML 中提取数据的 Python 库。现在的版本是 4.x, 安装办法为：
+
+    pip install beautifulsoup4
+
+假设我们获取了下面的页面并赋值给了变量 `page`（回忆 Python 的多行字符串语法）
+
+    page = """
+    <p id="question">What color do you like?</p>
+    <a href="/blue">I like blue.</a>
+    <p class="paragraph red">I prefer red!</p>
+    """
+
+假设我们要获取 `id` 为 `question` 的元素的内容，以及链接的地址 `/blue`，使用 Beautiful Soup 可以这样解析：
+
+    from bs4 import BeautifulSoup
+    soup = BeautifulSoup(page) # 创建一个 soup 对象
+
+    soup.select('#question')
+
+    for link in soup.find_all("a"):
+    
