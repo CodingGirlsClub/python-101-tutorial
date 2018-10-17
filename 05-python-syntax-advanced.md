@@ -1,3 +1,7 @@
+下面介绍更多的 Python 语法。
+
+如果对某个语法不熟悉，推荐到 Python 的官方网站寻找详细的 Python 语法参考：https://docs.python.org/3.7/reference/index.html 。
+
 # 拼接字符串
 
 使用 `f"..."` 和 `{}` 可以把变量的值拼接到字符串中去。试试下面的例子：
@@ -55,35 +59,8 @@
     for key, value in di.items():
         print(f"{key} {value}")
 
-# 函数
+# 你可能会疑惑……
 
-之前我们学习了用一个词代表值（变量），在 Python 中我们也能用一个词代表一段代码。
+问：语法这么多，函数那么多，程序员都记得吗？
 
-定义函数用 `def` 关键字，接上函数名称，参数列表和冒号。试理解下面的代码：
-
-    def double(x):
-        return x * 2
-
-在缩进的代码块中编写函数体，使用 `return` 返回需要的内容。
-
-之前我们学习的 `print`, `len` 都是函数，而且是是 Python 自带的函数 (built-in functions)。
-
-调用函数：
-
-    double(4)
-
-由于函数返回的是一个值，这个值也可以赋予给变量：
-
-    twice = double(4)
-    four_times = double(twice)
-
-函数返回的值也可以传递给下一个函数：
-
-    print(double(4))
-
-小提示：Python 的运算符 `+`，`-`，`*`，`/` 等等其实都是函数。
-
-(todo 更多综合性的例子)
-
-(todo 小问题和练习)
-
+答：并不！程序员也经常需要查阅文档，重新学习各种库和函数的用法，甚至到网上提问。网上还有不少问答网站，例如 [StackOverflow](https://stackoverflow.com) 和 [SegmentFault](https://segmentfault.com) 都记录了很多常见的问答。如果找不到需要的答案，你也可以在上面提出自己的问题。
