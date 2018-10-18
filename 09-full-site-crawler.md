@@ -73,7 +73,3 @@ https://tieba.baidu.com/p/143b3563243?pn=3
         urls = extract_links(page)
         for sub_url in urls:
             get_page(sub_url)
-
-# 组织代码
-
-代码变多的时候，需要
