@@ -56,7 +56,7 @@ https://tieba.baidu.com/p/143b3563243?pn=3
 
     def get_page(url):
         page = requests.get(url)
-        urls = extract_links(page)
+        urls = extract_links(page.text)
         for sub_url in urls:
             get_page(sub_url)
 
@@ -70,6 +70,6 @@ https://tieba.baidu.com/p/143b3563243?pn=3
             return # 下次碰到相同的网页，它就不会再爬取了
         crawled.add(url)
         page = requests.get(url)
-        urls = extract_links(page)
+        urls = extract_links(page.text)
         for sub_url in urls:
             get_page(sub_url)
