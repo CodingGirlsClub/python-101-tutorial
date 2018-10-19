@@ -3,7 +3,7 @@
 * [介绍](README.md)
 
 * [KickOff Party](Kickoff/README.md)
-  - [1.1 教学目的](Kickoff/1-teaching-target.md)
+  - [1.1 教学目的](Kickoff/1-teaching-goals.md)
   - [1.2 软件和工具](Kickoff/2-software-tool.md)
   - [1.3 课前自学](Kickoff/3-pre-homework.md)
 * [数据工程介绍](01-data-engineering-intro.md)
@@ -18,4 +18,4 @@
 * [初见数据处理](10-data-processing.md)
 * [Pandas](11-pandas)
 * [大作业和分享](project.md)
-* [后续学习建议](learning-suggestions).md)
+* [后续学习建议](learning-suggestions.md)
