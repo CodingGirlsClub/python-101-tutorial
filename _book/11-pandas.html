@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>HTML · GitBook</title>
+        <title>Pandas · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="07-login-and-js-render.html" />
+    <link rel="next" href="project.html" />
     
     
-    <link rel="prev" href="05-python-syntax-advanced.html" />
+    <link rel="prev" href="10-data-processing.html" />
     
 
     </head>
@@ -225,7 +225,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.8" data-path="06-python-html.html">
+        <li class="chapter " data-level="1.8" data-path="06-python-html.html">
             
                 <a href="06-python-html.html">
             
@@ -290,7 +290,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.13" data-path="11-pandas.html">
+        <li class="chapter active" data-level="1.13" data-path="11-pandas.html">
             
                 <a href="11-pandas.html">
             
@@ -359,7 +359,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >HTML</a>
+        <a href="." >Pandas</a>
     </h1>
 </div>
 
@@ -374,74 +374,20 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="html">HTML</h1>
-<p>HTML &#x662F;&#x8D85;&#x6587;&#x672C;&#x6807;&#x8BB0;&#x8BED;&#x8A00;&#xFF08;hypertext markup language&#xFF09;&#x7684;&#x7F29;&#x5199;&#x3002;</p>
-<p>&#xFF08;&#x5E38;&#x89C1;&#x8BED;&#x75C5;&#xFF1A;&#x300C;HTML &#x8BED;&#x8A00;&#x300D;&#x3002;&#x300C;L&#x300D;&#x548C;&#x300C;&#x8BED;&#x8A00;&#x300D;&#x540C;&#x4E49;&#x91CD;&#x590D;&#x4E86;&#xFF0C;&#x76F4;&#x63A5;&#x8BF4;&#x300C;HTML&#x300D;&#x5373;&#x53EF;&#xFF09;</p>
-<p>&#x6CE8;&#xFF1A;<a href="https://developer.mozilla.org/zh-CN/docs/Learn" target="_blank">MDN</a> &#x662F;&#x4E00;&#x4E2A;&#x6BD4;&#x8F83;&#x5168;&#x9762;&#x7684; Web &#x521D;&#x5B66;&#x8005;&#x7684;&#x6559;&#x7A0B;&#xFF0C;&#x4ECB;&#x7ECD; HTML&#xFF0C;CSS &#x548C; JavaScript&#xFF0C;&#x4E0A;&#x9762;&#x8FD8;&#x6709;&#x975E;&#x5E38;&#x5168;&#x9762;&#x7684; Web &#x53C2;&#x8003;&#x3002;</p>
-<h1 id="html-&#x7684;&#x6784;&#x9020;">HTML &#x7684;&#x6784;&#x9020;</h1>
-<pre><code>&lt;!DOCTYPE html&gt;
-&lt;header&gt;...&lt;/header&gt;
-&lt;body&gt;...&lt;/body&gt;
-&lt;/html&gt;
-</code></pre><p>&#x5E38;&#x89C1;&#x5143;&#x7D20;</p>
-<ul>
-<li>&#x5757; <code>&lt;div&gt;</code></li>
-<li>&#x884C;&#x5185; <code>&lt;span&gt;</code></li>
-<li>&#x94FE;&#x63A5; <code>&lt;a&gt;</code>&#xFF0C;&#x722C;&#x866B;&#x5F80;&#x5F80;&#x9700;&#x8981;&#x7279;&#x522B;&#x5173;&#x6CE8;&#x5B83;&#x7684; <code>href</code> &#x5C5E;&#x6027;</li>
-<li>&#x56FE;&#x7247; <code>&lt;img&gt;</code></li>
-<li>&#x89C6;&#x9891; <code>&lt;video&gt;</code></li>
-</ul>
-<p>(todo &#x7F51;&#x9875;&#x548C;&#x5143;&#x7D20;&#x5BF9;&#x5E94;&#x5173;&#x7CFB;&#x52A8;&#x753B;)</p>
-<p>&#x5E38;&#x89C1;&#x7684;&#x5C5E;&#x6027;</p>
-<ul>
-<li><code>href</code> &#x94FE;&#x63A5;&#x6240;&#x6307;&#x5411;&#x7684;&#x5730;&#x5740;</li>
-<li><code>id</code> &#x7528;&#x6765;&#x6307;&#x5B9A;&#x5143;&#x7D20;&#x552F;&#x4E00;&#x7684;&#x7684;&#x8EAB;&#x4EFD;&#x8BC1;&#x53F7;&#x7801;</li>
-<li><code>class</code> &#x8868;&#x793A;&#x5143;&#x7D20;&#x5C5E;&#x4E8E;&#x54EA;&#x4E9B;&#x7C7B;&#x522B;&#xFF0C;&#x591A;&#x4E2A;&#x7C7B;&#x522B;&#x4E4B;&#x95F4;&#x7528;&#x7A7A;&#x683C;&#x9694;&#x5F00;</li>
-</ul>
-<h1 id="css-&#x9009;&#x62E9;&#x5668;">CSS &#x9009;&#x62E9;&#x5668;</h1>
-<p>CSS &#x662F;&#x5C42;&#x53E0;&#x6837;&#x5F0F;&#x8868; (Cascade Stylesheet) &#x7684;&#x7F29;&#x5199;&#x3002;</p>
-<p>&#xFF08;&#x5E38;&#x89C1;&#x8BED;&#x75C5;&#xFF1A;&#x300C;CSS &#x6837;&#x5F0F;&#x8868;&#x300D;&#x3002;&#x300C;S&#x300D;&#x548C;&#x300C;&#x6837;&#x5F0F;&#x8868;&#x300D;&#x540C;&#x4E49;&#x91CD;&#x590D;&#x4E86;&#xFF0C;&#x76F4;&#x63A5;&#x8BF4;&#x300C;CSS&#x300D;&#x5373;&#x53EF;&#xFF09;</p>
-<p>&#x5728; CSS &#x4E2D;&#xFF0C;&#x9009;&#x62E9;&#x5668;&#xFF08;selector&#xFF09;&#x53EF;&#x4EE5;&#x7528;&#x4E8E;&#x5B9A;&#x4F4D;&#x6211;&#x4EEC;&#x60F3;&#x8981;&#x6837;&#x5F0F;&#x5316;&#x7684; HTML &#x5143;&#x7D20;&#x3002;&#x867D;&#x7136;&#x6211;&#x4EEC;&#x8FD9;&#x91CC;&#x4E0D;&#x9700;&#x8981;&#x7ED9; HTML &#x5143;&#x7D20;&#x6307;&#x5B9A;&#x5916;&#x89C2;&#x548C;&#x6837;&#x5F0F;&#xFF0C;&#x4F46;&#x9009;&#x62E9;&#x5668;&#x53EF;&#x4EE5;&#x5E2E;&#x52A9;&#x6211;&#x4EEC;&#x9009;&#x53D6;&#x9700;&#x8981;&#x7684;&#x5143;&#x7D20;&#x3002;</p>
-<ul>
-<li>&#x5143;&#x7D20;&#x9009;&#x62E9;&#x5668; <code>div</code>&#xFF0C;<code>span</code>&#xFF0C;<code>a</code></li>
-<li>id &#x9009;&#x62E9;&#x5668;</li>
-<li>class &#x9009;&#x62E9;&#x5668;</li>
-</ul>
-<p>&#x4F8B;&#xFF1A;&#x5047;&#x8BBE;&#x6709;&#x4EE5;&#x4E0B;&#x7684; HTML &#x9875;&#x9762;</p>
-<pre><code>&lt;p id=&quot;question&quot;&gt;What color do you like?&lt;/p&gt;
-&lt;div&gt;I like blue.&lt;/div&gt;
-&lt;p class=&quot;paragraph red&quot;&gt;I prefer red!&lt;/p&gt;
-</code></pre><ul>
-<li>&#x7528; <code>#question</code> &#x9009;&#x62E9;&#x5668;&#x53EF;&#x4EE5;&#x83B7;&#x5F97; <code>&lt;p id=&quot;question&quot;&gt;What color do you like?&lt;/p&gt;</code></li>
-<li>&#x7528; <code>div</code> &#x9009;&#x62E9;&#x5668;&#x53EF;&#x4EE5;&#x83B7;&#x5F97; <code>&lt;div&gt;I like blue.&lt;/div&gt;</code></li>
-<li>&#x7528; <code>.red</code> &#x9009;&#x62E9;&#x5668;&#x53EF;&#x4EE5;&#x83B7;&#x5F97; <code>&lt;p class=&quot;paragraph red&quot;&gt;I prefer red!&lt;/p&gt;</code></li>
-</ul>
-<p>&#x7EC4;&#x5408;&#x9009;&#x62E9;&#x5668;</p>
-<p><code>div .red a</code> &#x5339;&#x914D; <code>&lt;div&gt;</code> &#x5143;&#x7D20;&#x91CC;&#x9762;&#x7684; <code>red</code> &#x7C7B;&#x4EFB;&#x610F;&#x5143;&#x7D20;&#x91CC;&#x9762;&#x7684; <code>&lt;a&gt;</code> &#x5143;&#x7D20;</p>
-<h1 id="&#x5FEB;&#x901F;&#x83B7;&#x53D6;&#x9009;&#x62E9;&#x5668;">&#x5FEB;&#x901F;&#x83B7;&#x53D6;&#x9009;&#x62E9;&#x5668;</h1>
-<p>&#x6253;&#x5F00;&#x7F51;&#x9875;&#xFF0C;&#x4F7F;&#x7528; Chrome &#x5F00;&#x53D1;&#x8005;&#x5DE5;&#x5177;&#xFF0C;&#x9009;&#x62E9;&#x5BF9;&#x5E94;&#x7684;&#x5143;&#x7D20;&#xFF0C;&#x53F3;&#x952E;&#x590D;&#x5236;&#x9009;&#x62E9;&#x5668;</p>
-<p><img src="copy-selector.png" alt=""></p>
-<h1 id="&#x7528;-python-&#x89E3;&#x6790;-html">&#x7528; Python &#x89E3;&#x6790; HTML</h1>
-<p><a href="https://www.crummy.com/software/BeautifulSoup/bs4/doc.zh/" target="_blank">Beautiful Soup</a> &#x662F;&#x4E00;&#x4E2A;&#x53EF;&#x4EE5;&#x4ECE; HTML &#x4E2D;&#x63D0;&#x53D6;&#x6570;&#x636E;&#x7684; Python &#x5E93;&#x3002;&#x73B0;&#x5728;&#x7684;&#x7248;&#x672C;&#x662F; 4.x, &#x5B89;&#x88C5;&#x529E;&#x6CD5;&#x4E3A;&#xFF1A;</p>
-<pre><code>pip install beautifulsoup4
-</code></pre><p>&#x5047;&#x8BBE;&#x6211;&#x4EEC;&#x83B7;&#x53D6;&#x4E86;&#x4E0B;&#x9762;&#x7684;&#x9875;&#x9762;&#x5E76;&#x8D4B;&#x503C;&#x7ED9;&#x4E86;&#x53D8;&#x91CF; <code>page</code>&#xFF08;&#x56DE;&#x5FC6; Python &#x7684;&#x591A;&#x884C;&#x5B57;&#x7B26;&#x4E32;&#x8BED;&#x6CD5;&#xFF09;</p>
-<pre><code>page = &quot;&quot;&quot;
-&lt;p id=&quot;question&quot;&gt;What color do you like?&lt;/p&gt;
-&lt;a href=&quot;/blue&quot;&gt;I like blue.&lt;/a&gt;
-&lt;p class=&quot;paragraph red&quot;&gt;I prefer red!&lt;/p&gt;
-&quot;&quot;&quot;
-</code></pre><p>&#x5047;&#x8BBE;&#x6211;&#x4EEC;&#x8981;&#x83B7;&#x53D6; <code>id</code> &#x4E3A; <code>question</code> &#x7684;&#x5143;&#x7D20;&#x7684;&#x5185;&#x5BB9;&#xFF0C;&#x4EE5;&#x53CA;&#x94FE;&#x63A5;&#x7684;&#x5730;&#x5740; <code>/blue</code>&#xFF0C;&#x4F7F;&#x7528; Beautiful Soup &#x53EF;&#x4EE5;&#x8FD9;&#x6837;&#x89E3;&#x6790;&#xFF1A;</p>
-<pre><code>from bs4 import BeautifulSoup
-soup = BeautifulSoup(page) # &#x521B;&#x5EFA;&#x4E00;&#x4E2A; soup &#x5BF9;&#x8C61;
-
-matched_elements = soup.select(&apos;#question&apos;)
-links = soup.select(&apos;a&apos;)
-</code></pre><p><code>select</code> &#x51FD;&#x6570;&#x8FD4;&#x56DE;&#x7684;&#x7ED3;&#x679C;&#x662F;&#x5217;&#x8868;, &#x56DE;&#x5FC6;&#x4E4B;&#x524D;&#x5B66;&#x7684;&#x5217;&#x8868;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x7528;&#x4E0B;&#x6807;&#x8BBF;&#x95EE;&#xFF1A;</p>
-<pre><code>question = matched_elements[0].text # element.text &#x662F;
-print(question)
-</code></pre><p>&#x4E5F;&#x53EF;&#x4EE5;&#x904D;&#x5386;&#x5B83;&#xFF1A;</p>
-<pre><code>for a in links:
-    print(a[&apos;href&apos;])
+                                <h1 id="pandas">Pandas</h1>
+<p>Python &#x91CC;&#x8FDB;&#x884C;&#x6570;&#x636E;&#x64CD;&#x4F5C;&#xFF08;manipulation&#xFF09;&#x548C;&#x6570;&#x636E;&#x5904;&#x7406;&#x7684;&#x51FD;&#x6570;&#x5E93;&#x3002;</p>
+<p>&#x6838;&#x5FC3;&#x529F;&#x80FD;&#xFF1A;DataFrame, Series, &#x56FE;&#x8868;&#xFF0C;&#x7EDF;&#x8BA1;&#x7B49;&#x3002;</p>
+<p>&#x5B89;&#x88C5;&#xFF1A;</p>
+<pre><code>pip install pandas
+</code></pre><h1 id="dataframe">DataFrame</h1>
+<p>DataFrame &#x7C7B;&#x4F3C;&#x4E8E;&#x6570;&#x636E;&#x5E93;&#x7684;&#x8868;&#xFF0C;&#x5229;&#x7528; DataFrame &#x53EF;&#x4EE5;&#x5BF9;&#x5404;&#x79CD;&#x6570;&#x636E;&#x8FDB;&#x884C;&#x7EDF;&#x4E00;&#x7684;&#x5904;&#x7406;&#x3002;</p>
+<p>Pandas &#x652F;&#x6301;&#x4ECE;&#x591A;&#x79CD;&#x6570;&#x636E;&#x683C;&#x5F0F;&#x521B;&#x5EFA; DataFrame&#xFF0C;&#x4F8B;&#x5982; Excel &#x8868;&#x683C;&#xFF1A;</p>
+<pre><code>import pandas
+data_frame = pandas.read_excel(&quot;data.xsls&quot;)
+</code></pre><h1 id="&#x7ED8;&#x5236;&#x66F2;&#x7EBF;&#x56FE;">&#x7ED8;&#x5236;&#x66F2;&#x7EBF;&#x56FE;</h1>
+<pre><code>data_frame.plot()
+</code></pre><h1 id="&#x7ED8;&#x5236;&#x76F4;&#x65B9;&#x56FE;">&#x7ED8;&#x5236;&#x76F4;&#x65B9;&#x56FE;</h1>
+<pre><code>data_frame.hist(&quot;chart title&quot;)
 </code></pre>
                                 
                                 </section>
@@ -469,12 +415,12 @@ print(question)
 
             
                 
-                <a href="05-python-syntax-advanced.html" class="navigation navigation-prev " aria-label="Previous page: Python语法进阶">
+                <a href="10-data-processing.html" class="navigation navigation-prev " aria-label="Previous page: 初见数据处理">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="07-login-and-js-render.html" class="navigation navigation-next " aria-label="Next page: 爬虫介绍">
+                <a href="project.html" class="navigation navigation-next " aria-label="Next page: 大作业和分享">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -485,7 +431,7 @@ print(question)
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"HTML","level":"1.8","depth":1,"next":{"title":"爬虫介绍","level":"1.9","depth":1,"path":"07-login-and-js-render.md","ref":"07-login-and-js-render.md","articles":[]},"previous":{"title":"Python语法进阶","level":"1.7","depth":1,"path":"05-python-syntax-advanced.md","ref":"05-python-syntax-advanced.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"06-python-html.md","mtime":"2018-10-19T01:50:39.798Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-10-19T05:24:31.876Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Pandas","level":"1.13","depth":1,"next":{"title":"大作业和分享","level":"1.14","depth":1,"path":"project.md","ref":"project.md","articles":[]},"previous":{"title":"初见数据处理","level":"1.12","depth":1,"path":"10-data-processing.md","ref":"10-data-processing.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"11-pandas.md","mtime":"2018-10-19T01:50:39.800Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-10-19T05:24:31.876Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

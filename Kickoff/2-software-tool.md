@@ -1,7 +1,7 @@
 # 软件和工具
 
 - 下载并安装 [浏览器 Chrome](http://cn.bing.com/search?q=chrome)
-- 下载并安装 [集成开发环境 Anaconda](https://www.anaconda.com/download/)，记得选择Python 3.6 Version
+- 下载并安装 [集成开发环境 Anaconda](https://www.anaconda.com/download/)，记得选择Python 3.7 Version
   ![](/image/anaconda-3.6.png)
   - 你是否好奇「集成开发环境」是什么？那么赶紧用搜索引擎搜索一下关键字「集成开发环境」吧。
   - 略读 [集成开发环境 - 维基百科](https://zh.wikipedia.org/wiki/%E9%9B%86%E6%88%90%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83)
