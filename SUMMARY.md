@@ -13,7 +13,7 @@
 * [Python语法进阶](05-python-syntax-advanced.md)
 * [HTML](06-python-html.md)
 * [爬虫介绍](07-login-and-js-render.md)
-* [Json介绍](08-python-json.md)
+* [JSON介绍](08-python-json.md)
 * [爬虫实战](09-full-site-crawler.md)
 * [初见数据处理](10-data-processing.md)
 * [Pandas](11-pandas.md)

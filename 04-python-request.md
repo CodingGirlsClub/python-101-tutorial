@@ -27,17 +27,17 @@ HTTP 请求由以下部分组成：
 
 HTTP 响应由以下部分组成：
 
-- 响应行，包含 HTTP 版本和响应代码，例如 `HTTP2 200`
+- 响应行，包含 HTTP 版本和响应代码，例如 `HTTP/2 200`
 - 多个响应头，例如告诉客户端消息体的格式 `content-type: image/gif`
 - 一个空行
 - 可选的消息体
 
 常见的响应代码
 
-- 2XX 正常工作，如 200 OK, 201 部分 OK
-- 3XX 免传输，如 302 跳转，304 网页没变化
+- 2XX 正常工作，如 200 OK, 201 Created
+- 3XX 重定向，如 302 跳转，304 网页没变化
 - 4XX 客户端出问题了，如 400 非法请求，404 资源没找到
-- 5XX 服务器出问题了，如 500 服务器错误, 504 网关错误
+- 5XX 服务器出问题了，如 500 服务器内部错误, 504 后台服务超时
 
 使用 Chrome 开发者工具查看请求：
 
@@ -61,4 +61,4 @@ PyPI: [Python 包索引](https://pypi.org/)（Python Package Index) 是一个软
     response = requests.get('https://c.xkcd.com/random/comic/')
     print(response.text) # 打印网页的 HTML 源代码
 
-可以看到 HTML 的内容 `"<!DOCTYPE html>\n<html>……"`，下面我们先讲解一下 Python 进阶语法，然后再介绍如何从 HTML 中提取信息。
+可以看到以 `<!DOCTYPE html>` 开头的 HTML 内容，下面我们先讲解一下 Python 进阶语法，然后再介绍如何从 HTML 中提取信息。
