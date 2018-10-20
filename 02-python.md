@@ -8,7 +8,9 @@ Python 是计算机入门首选语言之一，编写简单，有丰富的生态�
 
 打开 Jupyter notebook，输入：
 
-    import this
+```python
+import this
+```
 
 然后回车。可以看到 Python 的哲学，描述于一首诗中。
 
@@ -38,5 +40,12 @@ Donald Knuth 说过：一个人并不真正了解一件事，除非他把一件�
 
 Python 的 `print` 函数不是打印到纸上，而是打印到屏幕上（确切来说是标准输出流）
 
-    print("I can program!")
+```
+print("I can program!")
+```
 
+# IPython
+
+IPython 是 Interactive Python 的缩写。它提供了自动完成（按 tab 键），查看文档，多行编辑等功能并且易于扩展。
+
+在 IPython 中可以输入 `?` 查看所有命令。

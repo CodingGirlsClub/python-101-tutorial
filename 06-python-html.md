@@ -8,10 +8,12 @@ HTML 是超文本标记语言（hypertext markup language）的缩写。
 
 # HTML 的构造
 
-    <!DOCTYPE html>
-    <header>...</header>
-    <body>...</body>
-    </html>
+```html
+<!DOCTYPE html>
+<header>...</header>
+<body>...</body>
+</html>
+```
 
 常见元素
 
@@ -43,9 +45,11 @@ CSS 是层叠样式表 (Cascade Stylesheet) 的缩写。
 
 例：假设有以下的 HTML 页面
 
-    <p id="question">What color do you like?</p>
-    <div>I like blue.</div>
-    <p class="paragraph red">I prefer red!</p>
+```html
+<p id="question">What color do you like?</p>
+<div>I like blue.</div>
+<p class="paragraph red">I prefer red!</p>
+```
 
 - 用 `#question` 选择器可以获得 `<p id="question">What color do you like?</p>`
 - 用 `div` 选择器可以获得 `<div>I like blue.</div>`
@@ -65,30 +69,40 @@ CSS 是层叠样式表 (Cascade Stylesheet) 的缩写。
 
 [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/bs4/doc.zh/) 是一个可以从 HTML 中提取数据的 Python 库。现在的版本是 4.x, 安装办法为：
 
-    pip install beautifulsoup4
+```python
+pip install beautifulsoup4
+```
 
 假设我们获取了下面的页面并赋值给了变量 `page`（回忆 Python 的多行字符串语法）
 
-    page = """
-    <p id="question">What color do you like?</p>
-    <a href="/blue">I like blue.</a>
-    <p class="paragraph red">I prefer red!</p>
-    """
+```python
+page = """
+<p id="question">What color do you like?</p>
+<a href="/blue">I like blue.</a>
+<p class="paragraph red">I prefer red!</p>
+"""
+```
 
 假设我们要获取 `id` 为 `question` 的元素的内容，以及链接的地址 `/blue`，使用 Beautiful Soup 可以这样解析：
 
-    from bs4 import BeautifulSoup
-    soup = BeautifulSoup(page) # 创建一个 soup 对象
+```python
+from bs4 import BeautifulSoup
+soup = BeautifulSoup(page) # 创建一个 soup 对象
 
-    matched_elements = soup.select('#question')
-    links = soup.select('a')
+matched_elements = soup.select('#question')
+links = soup.select('a')
+```
 
 `select` 函数返回的结果是列表, 回忆之前学的列表，我们可以用下标访问：
 
-    question = matched_elements[0].text # element.text 是
-    print(question)
+```python
+question = matched_elements[0].text # element.text 是
+print(question)
+```
 
 也可以遍历它：
 
-    for a in links:
-        print(a['href'])
+```python
+for a in links:
+    print(a['href'])
+```

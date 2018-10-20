@@ -6,9 +6,11 @@
 
 使用 `f"..."` 和 `{}` 可以把变量的值拼接到字符串中去。试试下面的例子：
 
-    me = "程序员"
-    sentence = f"hello, {me}"
-    print(sentence)
+```python
+me = "程序员"
+sentence = f"hello, {me}"
+print(sentence)
+```
 
 # 列表
 
@@ -16,48 +18,66 @@
 
 创建一个空的列表：
 
-    li = []
+```python
+li = []
+```
 
 创建一个带 3 个元素的列表：
 
-    li = ["zero", "one", "two"]
+```python
+li = ["zero", "one", "two"]
+```
 
 查看列表的长度：
 
-    len(li)
+```python
+len(li)
+```
 
 取出列表中的元素：
 
-    li[1]
+```python
+li[1]
+```
 
 往列表中添加成员：
 
-    li.append(1)
+```python
+li.append(1)
+```
 
 用 `for`……`in` 遍历列表：
 
-    for e in li:
-        print(e)
+```python
+for e in li:
+    print(e)
+```
 
 这个循环也可以用 `while` 来写，相当于：
 
-    i = 0
-    while i < len(li):
-        print(li[i])
-        i = i + 1
+```python
+i = 0
+while i < len(li):
+    print(li[i])
+    i = i + 1
+```
 
 `for` 比较方便迭代列表。
 
 # 字典
 
-创建一个字典：
+创建一个字典（注意用英文花括号，不要用中文的花括号）：
 
-    di = {}
+```
+di = {}
+```
 
 用 `for`……`in` 遍历字典：
 
-    for key, value in di.items():
-        print(f"{key} {value}")
+```python
+for key, value in di.items():
+    print(f"{key} {value}")
+```
 
 # 方法
 

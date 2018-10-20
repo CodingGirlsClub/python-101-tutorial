@@ -49,7 +49,9 @@ PyPI: [Python 包索引](https://pypi.org/)（Python Package Index) 是一个软
 
 [Requests](http://docs.python-requests.org/en/master/) 是一个方便的 HTTP 请求库。在命令行使用 pip 从 PyPI 上安装 requests：
 
-    pip install requests
+```bash
+pip install requests
+```
 
 注意：PyPI 上的库多数是开源的或者免费的，但是使用新的库时最好注意一下使用条款。
 
@@ -57,8 +59,10 @@ PyPI: [Python 包索引](https://pypi.org/)（Python Package Index) 是一个软
 
 # Requests 的使用
 
-    import requests
-    response = requests.get('https://c.xkcd.com/random/comic/')
-    print(response.text) # 打印网页的 HTML 源代码
+```python
+import requests
+response = requests.get('https://c.xkcd.com/random/comic/')
+print(response.text) # 打印网页的 HTML 源代码
+```
 
 可以看到以 `<!DOCTYPE html>` 开头的 HTML 内容，下面我们先讲解一下 Python 进阶语法，然后再介绍如何从 HTML 中提取信息。

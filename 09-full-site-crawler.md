@@ -16,9 +16,11 @@ https://tieba.baidu.com/p/143b3563243?pn=3
 
 那么只要我们知道一共有多少页，然后循环迭代 `pn=...`，就能遍历所有的页面
 
-    for i in range(3)
-        page = i + 1 # 注意循环是从 0 数起的
-        url = f"https://tieba.baidu.com/p/1433563243?pn={page}"
+```python
+for i in range(3)
+    page = i + 1 # 注意循环是从 0 数起的
+    url = f"https://tieba.baidu.com/p/1433563243?pn={page}"
+```
 
 # 全站爬虫的构造
 
@@ -40,38 +42,46 @@ https://tieba.baidu.com/p/143b3563243?pn=3
 
 稍微复杂一点的情况，网站有一个入口页和多个次级页面，我们分析入口页的所有链接，得到次级页面的链接爬取汇总。
 
+```python
+links = BeautifulSoup(page).select('a')
+urls = []
+for link in links:
+    urls.append(link['href'])
+```
+
+再复杂一点，网站的次级页面上还有到更次一级的页面的链接，我们可以把上面的代码提炼成一个函数：
+
+```python
+def extract_links(page):
     links = BeautifulSoup(page).select('a')
     urls = []
     for link in links:
         urls.append(link['href'])
-
-再复杂一点，网站的次级页面上还有到更次一级的页面的链接，我们可以把上面的代码提炼成一个函数：
-
-    def extract_links(page):
-        links = BeautifulSoup(page).select('a')
-        urls = []
-        for link in links:
-            urls.append(link['href'])
-        return urls
+    return urls
+```
 
 把请求网页的代码也组合到一起：
 
-    def get_page(url):
-        page = requests.get(url)
-        urls = extract_links(page.text)
-        for sub_url in urls:
-            get_page(sub_url)
+```python
+def get_page(url):
+    page = requests.get(url)
+    urls = extract_links(page.text)
+    for sub_url in urls:
+        get_page(sub_url)
+```
 
 这个函数调用了自己，叫做递归函数。
 
 上面的代码还有一些问题，如果子页面恰好链接到了父页面，它就停不下来了（实际上会出现一个栈溢出错误）。我们可以用集合来保证不会爬取相同的网页。
 
-    crawled = set()
-    def get_page(url):
-        if url in crawled:
-            return # 下次碰到相同的网页，它就不会再爬取了
-        crawled.add(url)
-        page = requests.get(url)
-        urls = extract_links(page.text)
-        for sub_url in urls:
-            get_page(sub_url)
+```python
+crawled = set()
+def get_page(url):
+    if url in crawled:
+        return # 下次碰到相同的网页，它就不会再爬取了
+    crawled.add(url)
+    page = requests.get(url)
+    urls = extract_links(page.text)
+    for sub_url in urls:
+        get_page(sub_url)
+```

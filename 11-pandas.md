@@ -14,13 +14,19 @@ DataFrame 类似于数据库的表，利用 DataFrame 可以对各种数据进�
 
 Pandas 支持从多种数据格式创建 DataFrame，例如 Excel 表格：
 
-    import pandas
-    data_frame = pandas.read_excel("data.xsls")
+```python
+import pandas
+data_frame = pandas.read_excel("data.xsls")
+```
 
 # 绘制曲线图
 
-    data_frame.plot()
+```
+data_frame.plot()
+```
 
 # 绘制直方图
 
-    data_frame.hist("chart title")
+```
+data_frame.hist("chart title")
+```
