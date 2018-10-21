@@ -9,14 +9,16 @@
 例如贴吧的一个帖子，首页，第二页，第三页的网址分别如下：
 
 https://tieba.baidu.com/p/1433563243
+
 https://tieba.baidu.com/p/1433563243?pn=2
+
 https://tieba.baidu.com/p/143b3563243?pn=3
 
 那么只要我们知道一共有多少页，然后循环迭代 `pn=...`，就能遍历所有的页面
 
     for i in range(3)
         page = i + 1 # 注意循环是从 0 数起的
-        url = f"https://tieba.baidu.com/p/1433563243?pn={i}"
+        url = f"https://tieba.baidu.com/p/1433563243?pn={page}"
 
 # 全站爬虫的构造
 
