@@ -46,3 +46,14 @@ Cooking time: 30min active / 30-45min passive
    ![](http://ocuwjo7n4.bkt.clouddn.com/blog/2017-05-26-064818.jpg)
 
 5. 访问 https://github.com/ 网站，你可以看到你刚刚通过Github Desktop软件在github.com 网站新建了一个仓库。
+
+------
+
+### 辅助材料
+
+Cheatsheet
+
+- 正面：Python 语法和常用函数
+- 反面：Chrome 拷贝选择器的图示
+
+(TODO printable cheatsheet)
