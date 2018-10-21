@@ -68,7 +68,7 @@ while i < len(li):
 
 创建一个字典（注意用英文花括号，不要用中文的花括号）：
 
-```
+```python
 di = {}
 ```
 
@@ -85,6 +85,5 @@ for key, value in di.items():
 
 # 你可能会疑惑……
 
-问：语法这么多，函数那么多，程序员都记得吗？
-
-答：并不！程序员也经常需要查阅文档，重新学习各种库和函数的用法，甚至到网上提问。网上还有不少问答网站，例如 [StackOverflow](https://stackoverflow.com) 和 [SegmentFault](https://segmentfault.com) 都记录了很多常见的问答。如果找不到需要的答案，你也可以在上面提出自己的问题。
+**问**：程序员都记得所有的语法和函数吗？  
+**答**：并不！程序员也经常需要查阅文档，重新学习各种库和函数的用法，甚至到网上提问。网上还有不少问答网站，例如 [StackOverflow](https://stackoverflow.com) 和 [SegmentFault](https://segmentfault.com) 都记录了很多常见的问答。如果找不到需要的答案，你也可以在上面提出自己的问题。
