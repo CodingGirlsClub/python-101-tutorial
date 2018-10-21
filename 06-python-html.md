@@ -63,7 +63,7 @@ CSS 是层叠样式表 (Cascade Stylesheet) 的缩写。
 
 打开网页，使用 Chrome 开发者工具，选择对应的元素，右键复制选择器
 
-![](https://ws2.sinaimg.cn/large/006tNbRwgy1fwg99m0svoj30o50z4gub.jpg)
+![](https://ws4.sinaimg.cn/large/006tNbRwgy1fwg9c1zimaj31em0msdka.jpg)
 
 # 用 Python 解析 HTML
 
