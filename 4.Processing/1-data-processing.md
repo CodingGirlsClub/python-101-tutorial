@@ -4,26 +4,36 @@
 
 按分隔符拆分字符串
 
-    "a b c d".split(" ") # ["a", "b", "c", "d"]
+```python
+"a b c d".split(" ") # ["a", "b", "c", "d"]
+```
 
 用分隔符合并字符串
 
-    " ".join(["a", "b", "c", "d"]) # "a b c d"
+```python
+" ".join(["a", "b", "c", "d"]) # "a b c d"
+```
 
 取子字符串
 
-    "this is good"[5:]
+```python
+"this is good"[5:]
+```
 
 找到子字符串的位置
 
-    "foo bar baz".index('bar')
-    "foo".index("bar") # ValueError
+```python
+"foo bar baz".index('bar')
+"foo".index("bar") # ValueError
+```
 
 子字符串判断:
 
-    "sub" in "string with sub"
-    str.startswith("prefix")
-    str.endswith("suffix")
+```python
+"sub" in "string with sub"
+str.startswith("prefix")
+str.endswith("suffix")
+```
 
 # 数据处理初步
 
