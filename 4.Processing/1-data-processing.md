@@ -1,3 +1,30 @@
+# Python 字符串
+
+很多人会说数组是最重要的数据结构，但最常用的数据结构却是字符串。数据处理中使用最多的操作是字符串操作。
+
+按分隔符拆分字符串
+
+    "a b c d".split(" ") # ["a", "b", "c", "d"]
+
+用分隔符合并字符串
+
+    " ".join(["a", "b", "c", "d"]) # "a b c d"
+
+取子字符串
+
+    "this is good"[5:]
+
+找到子字符串的位置
+
+    "foo bar baz".index('bar')
+    "foo".index("bar") # ValueError
+
+子字符串判断:
+
+    "sub" in "string with sub"
+    str.startswith("prefix")
+    str.endswith("suffix")
+
 # 数据处理初步
 
 最基本的数据处理可以用 Python 直接完成。一些例子如下。
