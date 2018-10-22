@@ -65,13 +65,13 @@
 
 特殊量 -- 代表什么都没有
 
-```
+```python
 None
 ```
 
 查看数据的类型
 
-```
+```python
 type(3) # int
 ```
 
@@ -112,7 +112,7 @@ some_variable_1 = "一个值" # 变量名可以包含字母、数字和下划线
 
 运算的结果可以赋予变量，变量也可以参加运算，例如下面计算平均值的代码：
 
-```
+```python
 sum = 1 + 2 + 3 + 4 + 5
 average = sum / 5.0
 print(average)
@@ -161,7 +161,7 @@ else:
 
 练习：思考下面几个表达式的值并在 IPython 验证：
 
-```
+```python
 True and True
 not False
 False or True
@@ -178,7 +178,7 @@ False or True
 
 练习：思考下面几个表达式的值并在 IPython 验证：
 
-```
+```python
 1 <= 3
 5 > 4 and 4 > 3
 ```
