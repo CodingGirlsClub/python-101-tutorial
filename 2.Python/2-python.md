@@ -4,9 +4,9 @@ Python 是计算机入门首选语言之一，编写简单，有丰富的生态�
 
 运行 Python 程序需要 Python 解释器（其实是编译+执行）。
 
-# 第一 Python 程序
+# 第一个 Python 程序
 
-打开 Jupyter notebook，输入：
+打开 IPython，输入：
 
 ```python
 import this
@@ -14,7 +14,7 @@ import this
 
 然后回车。可以看到 Python 的哲学，描述于一首诗中。
 
-`import` 语句的作用是引入一个包，而这个包 `this` 的作用是打印这首诗。
+上面的代码中，`import` 语句的作用是引入一个包，而这个包 `this` 的作用是打印这首诗。
 
 # 编程
 

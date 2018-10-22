@@ -8,15 +8,19 @@ JSON 是一种数据格式。
 
 标准的 JSON 库可以把 JSON 类型和 Python 类型相互转换
 
-    import json
+```python
+import json
 
-    json_string = json.dumps([1, 2, {"foo": true, "bar": None}])
-    json.loads(json_string)
+json_string = json.dumps([1, 2, {"foo": true, "bar": None}])
+json.loads(json_string)
+```
 
 # 获取 JSON 响应
 
-    response = requests.get("http://some.website.com/data.json")
-    response.json()
+```python
+response = requests.get("http://some.website.com/data.json")
+response.json()
+```
 
 # Web API
 

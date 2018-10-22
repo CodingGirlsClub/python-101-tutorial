@@ -1,34 +1,42 @@
+提示：切换到英文输入法编程可以避免一些用错符号的错误。
+
 # 注释
 
-一行中以 `#` 开始直到行末的部分都属于注释
+注释是写给阅读代码的人看的，计算机会忽略注释。一行中以 `#` 开始直到行末的部分都属于注释。
 
 ```python
 # 可以在代码中穿插写一些笔记，不影响程序的执行
 ```
 
-# 数据类型
+# 基本数据类型
 
-整数
+整数，类型为 `int`
 
 ```python
-1
 1234
+-1234
 ```
 
-小数（浮点数）
+小数（浮点数），类型为 `float`
 
 ```python
-3.1415
+3.1415926
 ```
 
-字符串 -- 注意要用半角英文引号包起来:
+字符串，类型为 `str`
 
 ```python
-"双引号字符串"
+"双引号字符串" # 注意要用半角英文引号包起来
 '单引号字符串'
 ```
 
-转义字符:
+字符串中，空格也是字符：
+
+```python
+" " # 这也是一个字符串
+```
+
+有一些字符也是没有对应的字形（Glyph），但是可以用 **转义字符** 表达:
 
 ```python
 "\n" # 换行
@@ -36,7 +44,7 @@
 "\t" # tab
 ```
 
-以上的字符串写法限制只能写在一行内。Python 支持三个引号的多行字符串语法，方便书写多行的内容：
+以上的字符串写法有个限制：只能写在一行内。Python 支持三个引号的多行字符串语法，方便书写多行的内容：
 
 ```python
 """
@@ -63,34 +71,44 @@ type(3) # int
 
 在 Jupyter 中输入下面的表达式试试：
 
-    1 + 1
-    2.5 * 3
-    4 / 2
+```python
+1 + 1
+2.5 * 3
+4 / 2
+```
 
-除以 0 会得到 Not a Number
+除以 0 会得到 NaN（Not a Number）
 
-    1 / 0 # NaN
+```python
+1 / 0 # NaN
+```
 
 字符串也可以进行连接运算（使用 `+` 运算符）
 
-    "hello" + " world"
+```python
+"hello" + " world"
+```
 
 注意：全角符号和半角符号的区别。
 
 # 变量
 
-用一个符号代表一个值（`=` 叫做赋值运算符）
+用一个名称代表一个值（`=` 叫做赋值运算符）
 
-    a = 3
-    some_value = "一个值"
+```python
+a = 3
+some_variable_1 = "一个值" # 变量名可以包含字母、数字和下划线，但不能以数字打头
+```
 
 这个符号代表的值可以重新赋值，所以这个量称为变量 -- variable。
 
 运算的结果可以赋予变量，变量也可以参加运算，例如下面计算平均值的代码：
 
-    sum = 1 + 2 + 3 + 4 + 5
-    average = sum / 5.0
-    print(average)
+```
+sum = 1 + 2 + 3 + 4 + 5
+average = sum / 5.0
+print(average)
+```
 
 # 条件
 
@@ -98,15 +116,19 @@ type(3) # int
 
 布尔类型（注意大小写）
 
-    True
-    False
+```python
+True
+False
+```
 
 条件语法
 
-    if True:
-        print("真")
-    if False:
-        print("假")
+```python
+if True:
+    print("真")
+if False:
+    print("假")
+```
 
 注意：
 
@@ -115,11 +137,13 @@ type(3) # int
 
 上面两个条件内容互斥，我们可以用双路条件 `if`……`else`：
 
-    t = True
-    if t:
-        print(“真”)
-    else:
-        print("假")
+```python
+t = True
+if t:
+    print(“真”)
+else:
+    print("假")
+```
 
 布尔类型上可以用布尔运算:
 
@@ -127,12 +151,15 @@ type(3) # int
 - 或者 `or`
 - 否定 `not`
 
-例如：
+练习：思考下面几个表达式的值并在 IPython 验证：
 
-    True and True
-    not False
+```
+True and True
+not False
+False or True
+```
 
-比较运算符
+比较运算符可以判断两个值是否相等或者孰大孰小：
 
 - `==` 等于（两个等号，注意和赋值运算的不同）
 - `>` 大于
@@ -141,13 +168,22 @@ type(3) # int
 - `>=` 大于或者等于
 - `<=` 小于或者等于
 
-综合应用例：「如果天气晴朗并且低于 30 度就出去玩」
+练习：思考下面几个表达式的值并在 IPython 验证：
 
-    weather = "rainy"
-    temperature = 20
+```
+1 <= 3
+5 > 4 and 4 > 3
+```
 
-    if weather == "sunny" and temperature < 30:
-        print("lets go out!")
+综合运用条件语句和比较运算符：「如果天气晴朗并且低于 30 度就出去玩」
+
+```python
+weather = "rainy"
+temperature = 20
+
+if weather == "sunny" and temperature < 30:
+    print("lets go out!")
+```
 
 # 循环
 
@@ -155,21 +191,25 @@ type(3) # int
 
 `while` 循环打印 0 到 100
 
-    a = 0
-    while a <= 100：
-        print(a)
-        a = a + 1
+```python
+a = 0
+while a <= 100：
+    print(a)
+    a = a + 1
+```
 
 同样注意别忘了 `:` 和缩进
 
 循环一般由循环条件和循环体组成。（todo: 补充 while 循环执行的动图）
 
-死循环：不会结束的循环。
+**死循环** 的意思是：不会结束的循环。
 
-    import time
-    while True:
-        print("I am stuck")
-        time.sleep(1)
+```python
+import time
+while True:
+    print("I am stuck")
+    time.sleep(1)
+```
 
 要结束程序，可以按 Ctrl + C 退出。(一个手指按住 Ctrl 键，然后另一个手指按 C 键，退出时解释器会报告一段错误，意思是收到了中断信号)。
 
@@ -186,8 +226,10 @@ type(3) # int
 
 定义函数用 `def` 关键字，接上函数名称，参数列表和冒号。试理解下面的代码：
 
-    def double(x):
-        return x * 2
+```python
+def double(x):
+    return x * 2
+```
 
 在缩进的代码块中编写函数体，使用 `return` 返回需要的内容。
 
@@ -195,16 +237,22 @@ type(3) # int
 
 调用函数：
 
-    double(4)
+```python
+double(4)
+```
 
 由于函数返回的是一个值，这个值也可以赋予给变量：
 
-    twice = double(4)
-    four_times = double(twice)
+```python
+twice = double(4)
+four_times = double(twice)
+```
 
 函数返回的值也可以传递给下一个函数：
 
-    print(double(4))
+```python
+print(double(4))
+```
 
 小提示：Python 的运算符 `+`，`-`，`*`，`/` 等等其实都是函数。
 
