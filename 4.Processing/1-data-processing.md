@@ -47,13 +47,13 @@ for key, value in dict.items():
 - JSON 如前述，可以用 Python 自带的 JSON 库去处理。
 - XML 类似于 HTML，但是标签需要严格闭合，也可以用 BeautifulSoup 处理。
 
-## 应用示例（倒排索引）
+## 应用示例（提取信息）
 
-如果我们只有一个英汉字典，可以在这个的基础上生成一个汉英字典吗？
+示例：从免费词典资源提取一个简化版（只含单词和定义）的词典。
 
-数据位于 https://raw.githubusercontent.com/skywind3000/ECDICT/master/ecdict.csv
+假设我们能下载到这么一个词典数据 https://raw.githubusercontent.com/skywind3000/ECDICT/master/ecdict.csv
 
-这个词典是一个 CSV 的文件格式，我们可以先把它下载下来。
+下载：
 
 ```python
 import request
@@ -62,7 +62,7 @@ with open("ecdict.csv", "w") as f:
     f.write(response.text)
 ```
 
-用编辑器或者表格处理软件打开，观察 CSV 文件的结构：
+它是一个 CSV 文件，用编辑器或者表格处理软件打开，观察文件的结构：
 
 ```csv
 word,phonetic,definition,translation,pos,collins,oxford,tag,bnc,frq,exchange,detail,audio
@@ -70,33 +70,34 @@ hood,hʊd,,"n. 罩；风帽；（布质）面罩；学位连领帽（表示学�
 ...
 ```
 
-由第一行表头信息可知，单词（word）是第一列（对应下标 0），定义（definition）是第三列（对应下标 2）。Python 内建了处理 CSV 的库函数，我们可以写一个循环去提取这两列：
+由第一行表头信息可知，单词（word）是第一列（对应下标 0），定义（definition）是第三列（对应下标 2）。
+
+Python 内建了处理 CSV 的库函数，我们可以写一个循环去提取这两列：
 
 ```python
+# encoding: utf-8
 import csv
-reverse_index = {}
+result = {}
 with open("ecdict.csv", "r") as f:
     for row in csv.reader(f):
-        english_word = row[0]
+        word = row[0]
         definition = row[2]
-        for chinese_word in definition.split(" ")[1].split(";")[0].split(",")[0]: # 这里只取了第一个解释，可以更准确点吗？
-            if not (chinse_word in reverse_index):
-                reverse_index[chinese_word] = english_word
-            else:
-                reverse_index[chinese_word] += "," + english_word
+        result[word] = definition
 ```
 
-然后把倒排索引写进文件里：
+然后把结果写进文件里：
 
 ```python
-with open("cedict.csv", "w") as f:
-    for chinese_word, english_words in reverse_index:
-        f.write(chinese_word)
+with open("simplifided.csv", "w") as f:
+    for word, definition in result.items():
+        f.write(word)
         f.write(":")
-        f.write(english_words)
+        f.write(definition)
         f.write("\n")
 ```
 
-倒排索引（invert index）是一个重要的技巧，方便我们按照需要的维度去查询数据。常用于搜索引擎中。
-
 注：此示例参考了 https://blog.plover.com/lang/ambiguous.html
+
+思考：如果这是一个英语到中文的词典，而我们想要得到中文到英文的解释，可以怎么做？
+
+延伸阅读：网上搜索"倒排索引"，并尝试理解。
