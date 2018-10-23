@@ -67,11 +67,7 @@ CSS 是层叠样式表 (Cascade Stylesheet) 的缩写。
 
 # 用 Python 解析 HTML
 
-[Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/bs4/doc.zh/) 是一个可以从 HTML 中提取数据的 Python 库。现在的版本是 4.x, 安装办法为：
-
-```python
-pip install beautifulsoup4
-```
+[Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/bs4/doc.zh/) 是一个可以从 HTML 中提取数据的 Python 库。
 
 假设我们获取了下面的页面并赋值给了变量 `page`（回忆 Python 的多行字符串语法）
 

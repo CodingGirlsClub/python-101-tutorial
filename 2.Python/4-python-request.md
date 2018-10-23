@@ -43,21 +43,9 @@ HTTP 响应由以下部分组成：
 
 (todo 截图)
 
-# 处理 HTTP 的库
-
-PyPI: [Python 包索引](https://pypi.org/)（Python Package Index) 是一个软件仓库，帮助你搜索、安装和分享 Python 软件。开放的 PyPI 上丰富的三方库是 Python 成功的要素之一。
-
-[Requests](http://docs.python-requests.org/en/master/) 是一个方便的 HTTP 请求库。在命令行使用 pip 从 PyPI 上安装 requests：
-
-```bash
-pip install requests
-```
-
-注意：PyPI 上的库多数是开源的或者免费的，但是使用新的库时最好注意一下使用条款。
-
-技巧：世界很复杂，人类很忙。如果一个问题已经被别人解决过，那我们也可以把它的解决方案拿来用 —— 很多时候不一定要自己编写代码，通过 PyPI 或者 GitHub 找到适合的函数和库也能解决问题。
-
 # Requests 的使用
+
+[Requests](http://docs.python-requests.org/en/master/) 是一个方便的 HTTP 请求库。
 
 ```python
 import requests

@@ -4,10 +4,6 @@ Python 里进行数据操作（manipulation）和数据处理的函数库。
 
 核心功能：DataFrame, Series, 图表，统计等。
 
-安装：
-
-    pip install pandas
-
 # DataFrame
 
 DataFrame 类似于数据库的表，利用 DataFrame 可以对各种数据进行统一的处理。
