@@ -1,4 +1,4 @@
-## # Python 语法进阶
+# Python 语法进阶
 
 下面介绍更多的 Python 语法。
 
