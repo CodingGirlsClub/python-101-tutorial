@@ -4,7 +4,7 @@
 
 - 下载并安装 [浏览器 Chrome](http://cn.bing.com/search?q=chrome)
 - 下载并安装 [集成开发环境 Anaconda](https://www.anaconda.com/download/)，记得选择Python 3.7 Version
-  ![](/image/anaconda-3.6.png)
+  ![](https://www.anaconda.com/wp-content/themes/anaconda/images/logo-dark.png)
   - 你是否好奇「集成开发环境」是什么？那么赶紧用搜索引擎搜索一下关键字「集成开发环境」吧。
   - 略读 [集成开发环境 - 维基百科](https://zh.wikipedia.org/wiki/%E9%9B%86%E6%88%90%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83)
 - 注册[GitHub](https://github.com/)
@@ -13,15 +13,18 @@
   - 阅读并操作 [Authenticating to GitHub](https://help.github.com/desktop/guides/getting-started-with-github-desktop/authenticating-to-github/)
   - 按照阅读内容，配置好[github.com](http://github.com) 的帐号信息
   - **注意**：如果你是 Windows 32位系统，可能无法安装Github Desktop，请下载安装[SourceTree](https://www.sourcetreeapp.com/) 方法与Github Desktop雷同，如有疑问请咨询教练。
-- 使用 Anaconda 安装以下软件
-  - Spyder
-  - Requests-html
-  - Tesseract
+- 使用 Anaconda 安装以下软件（Spyder，Beautifulsoup4, Requests 已默认安装）
+  ```python
+  conda install -c conda-forge tesseract
+  pip install pytesseract
+  ```
+
+注：由于 Anaconda 里的 pytesseract 的大部分依赖已经过期，这里改用 PIP 安装。
 
 **Tasks For Tutors**：
 请教练介绍一下这些软件。Tips：尽量使用类比方法，让学员快速理解这些软件的用途。
 
-------
+<!-- ------
 
 ### Github Desktop 配置
 
@@ -49,7 +52,7 @@
 
    ![](http://ocuwjo7n4.bkt.clouddn.com/blog/2017-05-26-064818.jpg)
 
-5. 访问 https://github.com/ 网站，你可以看到你刚刚通过Github Desktop软件在github.com 网站新建了一个仓库。
+5. 访问 https://github.com/ 网站，你可以看到你刚刚通过Github Desktop软件在github.com 网站新建了一个仓库。 -->
 
 ------
 
