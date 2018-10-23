@@ -1,6 +1,6 @@
 # 软件和工具
 
-Cooking time: 30min active / 30-45min passive
+> Cooking time: 30min active / 30-45min passive
 
 - 下载并安装 [浏览器 Chrome](http://cn.bing.com/search?q=chrome)
 - 下载并安装 [集成开发环境 Anaconda](https://www.anaconda.com/download/)，记得选择Python 3.7 Version
