@@ -1,4 +1,4 @@
-# HTTP
+## HTTP
 
 HTTP 是超文本传输协议（hypertext transfer protocol）的缩写。
 
@@ -43,7 +43,7 @@ HTTP 响应由以下部分组成：
 
 (todo 截图)
 
-# Requests 的使用
+## Requests 的使用
 
 [Requests](http://docs.python-requests.org/en/master/) 是一个方便的 HTTP 请求库。
 

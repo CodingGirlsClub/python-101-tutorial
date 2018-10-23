@@ -10,7 +10,7 @@ Python 是计算机入门首选语言之一，编写简单，有丰富的生态�
 > - 解释什么是编译
 > - 解释什么是执行
 
-# 第一个 Python 程序
+## 第一个 Python 程序
 
 1. 使用IDE Anaconda打开 spyder
 
@@ -44,7 +44,7 @@ Python 是计算机入门首选语言之一，编写简单，有丰富的生态�
 
 可以看到 Python 的哲学，描述于一首诗中。上面的代码中，`import` 语句的作用是引入一个包，而这个包 `this` 的作用是打印这首诗。
 
-# 编程
+## 编程
 
 ### 任务分解
 
@@ -52,7 +52,7 @@ Python 是计算机入门首选语言之一，编写简单，有丰富的生态�
 
 ### 编程思维
 
-![](https://ws4.sinaimg.cn/large/006tNbRwly1fwict5oyqdj31kw1kw124.jpg)
+![图片来于[Computational Thinking:Decomposition | Abstraction | Patterns | Algorithms](https://www.computationalthinkers.com/product/computationalthinking/)](https://ws4.sinaimg.cn/large/006tNbRwly1fwict5oyqdj31kw1kw124.jpg)
 
 Donald Knuth 说过：一个人并不真正了解一件事，除非他把一件事教给计算机 —— 特别是用算法把它描述出来。
 
@@ -62,16 +62,17 @@ Donald Knuth 说过：一个人并不真正了解一件事，除非他把一件�
 > until after teaching it to a computer, i.e., express it
 > as an algorithm.
 
-### 程序出错
+**Learning by Additional Reading**:  [Google for Education: Computational Thinking](https://edu.google.com/resources/programs/exploring-computational-thinking/) (需要科学上网，拓展阅读，非本工作坊所需)
+
+## 程序出错
 
 有一个说法叫：计算机很笨却听话（The computer is very dumb but obedient）。当遇到语法错误时，即使是很微小的错误，它也不会自己修正它。程序员每天都会遇到很多各种语法错误。只要仔细阅读错误信息，找到并修正就可以了。
 
-参考阅读: http://guyhaas.com/bfoit/Intro_to_Programming/Programming.html
+**Learning by Additional Reading**:  [Introduction to Computer Programming - What Is It](http://guyhaas.com/bfoit/Intro_to_Programming/Programming.html) 
 
-# 打印一段话
+## 打印一段话
 
-
-> **Learning by doing**:  cookie time 5 mins
+**Learning by Doing**: 
 
 Python 的 `print` 函数不是打印到纸上，而是打印到屏幕上（确切来说是标准输出流）
 
