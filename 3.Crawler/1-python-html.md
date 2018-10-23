@@ -1,4 +1,10 @@
-# HTML
+# HTML 与 爬虫
+
+## 为什么学习爬虫要掌握HTML基础
+
+
+
+## HTML 基础介绍
 
 HTML 是超文本标记语言（hypertext markup language）的缩写。
 
@@ -6,7 +12,7 @@ HTML 是超文本标记语言（hypertext markup language）的缩写。
 
 注：[MDN](https://developer.mozilla.org/zh-CN/docs/Learn) 是一个比较全面的 Web 初学者的教程，介绍 HTML，CSS 和 JavaScript，上面还有非常全面的 Web 参考。
 
-# HTML 的构造
+### HTML 的构造
 
 ```html
 <!DOCTYPE html>
@@ -31,7 +37,7 @@ HTML 是超文本标记语言（hypertext markup language）的缩写。
 
 体验：在 Chrome 浏览器中，右键查看元素。鼠标移到不同的元素上面，观察页面哪一部分高亮了。
 
-# CSS 选择器
+### CSS 选择器
 
 CSS 是层叠样式表 (Cascade Stylesheet) 的缩写。
 
@@ -59,13 +65,15 @@ CSS 是层叠样式表 (Cascade Stylesheet) 的缩写。
 
 `div .red a` 匹配 `<div>` 元素里面的 `red` 类任意元素里面的 `<a>` 元素
 
-# 快速获取选择器
+### 快速获取选择器
 
 打开网页，使用 Chrome 开发者工具，选择对应的元素，右键复制选择器
 
 ![](https://ws4.sinaimg.cn/large/006tNbRwgy1fwg9c1zimaj31em0msdka.jpg)
 
-# 用 Python 解析 HTML
+
+
+## 用 Python 解析 HTML
 
 [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/bs4/doc.zh/) 是一个可以从 HTML 中提取数据的 Python 库。
 
