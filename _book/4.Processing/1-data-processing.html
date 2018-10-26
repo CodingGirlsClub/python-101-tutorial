@@ -457,7 +457,10 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="python-&#x5B57;&#x7B26;&#x4E32;">Python &#x5B57;&#x7B26;&#x4E32;</h1>
+                                <h1 id="&#x6570;&#x636E;&#x5904;&#x7406;&#x521D;&#x6B65;">&#x6570;&#x636E;&#x5904;&#x7406;&#x521D;&#x6B65;</h1>
+<p>&#x6211;&#x4EEC;&#x6536;&#x96C6;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x5F80;&#x5F80;&#x4E0D;&#x7B26;&#x5408;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x7684;&#x683C;&#x5F0F;&#xFF0C;&#x5E26;&#x6709;&#x4E0D;&#x540C;&#x7684;&#x566A;&#x97F3;&#xFF0C;&#x770B;&#x4E0D;&#x51FA;&#x672C;&#x8D28;&#x2026;&#x2026; &#x9700;&#x8981;&#x5BF9;&#x6570;&#x636E;&#x8FDB;&#x884C;&#x8F6C;&#x6362;&#x52A0;&#x5DE5;&#x624D;&#x80FD;&#x83B7;&#x5F97;&#x6709;&#x7528;&#x7684;&#x4FE1;&#x606F;&#x3002;</p>
+<p>&#x722C;&#x866B;&#x83B7;&#x53D6;&#x7684;&#x662F;&#x539F;&#x6599;&#xFF0C;&#x8981;&#x7ECF;&#x8FC7;&#x6570;&#x636E;&#x5904;&#x7406;&#x7684;&#x52A0;&#x5DE5;&#xFF0C;&#x6700;&#x540E;&#x624D;&#x80FD;&#x83B7;&#x5F97;&#x4EA7;&#x54C1;&#x3002;</p>
+<h2 id="python-&#x5B57;&#x7B26;&#x4E32;">Python &#x5B57;&#x7B26;&#x4E32;</h2>
 <p>&#x5F88;&#x591A;&#x4EBA;&#x4F1A;&#x8BF4;&#x6700;&#x91CD;&#x8981;&#x7684;&#x6570;&#x636E;&#x7ED3;&#x6784;&#x662F;&#x6570;&#x7EC4;&#xFF0C;&#x4F46;&#x6700;&#x5E38;&#x7528;&#x7684;&#x6570;&#x636E;&#x7ED3;&#x6784;&#x5374;&#x662F;&#x5B57;&#x7B26;&#x4E32;&#x3002;&#x6570;&#x636E;&#x5904;&#x7406;&#x4E2D;&#x4F7F;&#x7528;&#x6700;&#x591A;&#x7684;&#x64CD;&#x4F5C;&#x4E5F;&#x662F;&#x5B57;&#x7B26;&#x4E32;&#x64CD;&#x4F5C;&#x3002;</p>
 <p>&#x6309;&#x5206;&#x9694;&#x7B26;&#x62C6;&#x5206;&#x5B57;&#x7B26;&#x4E32;&#xFF08;split&#xFF09;</p>
 <pre><code class="lang-python"><span class="hljs-string">&quot;a b c d&quot;</span>.split(<span class="hljs-string">&quot; &quot;</span>) <span class="hljs-comment"># [&quot;a&quot;, &quot;b&quot;, &quot;c&quot;, &quot;d&quot;]</span>
@@ -477,8 +480,29 @@
 str.startswith(<span class="hljs-string">&quot;prefix&quot;</span>)
 str.endswith(<span class="hljs-string">&quot;suffix&quot;</span>)
 </code></pre>
-<h1 id="&#x6570;&#x636E;&#x5904;&#x7406;&#x521D;&#x6B65;">&#x6570;&#x636E;&#x5904;&#x7406;&#x521D;&#x6B65;</h1>
-<p>&#x6700;&#x57FA;&#x672C;&#x7684;&#x6570;&#x636E;&#x5904;&#x7406;&#x53EF;&#x4EE5;&#x7528; Python &#x76F4;&#x63A5;&#x5B8C;&#x6210;&#x3002;&#x4E00;&#x4E9B;&#x4F8B;&#x5B50;&#x5982;&#x4E0B;&#x3002;</p>
+<h2 id="&#x7C7B;&#x578B;&#x8F6C;&#x6362;">&#x7C7B;&#x578B;&#x8F6C;&#x6362;</h2>
+<p>&#x524D;&#x9762; Python &#x57FA;&#x7840;&#x63D0;&#x5230;&#xFF0C;&#x6570;&#x636E;&#x6709;&#x4E0D;&#x540C;&#x7684;&#x7C7B;&#x578B;&#xFF0C;&#x6709;&#x65F6;&#x5B83;&#x7684;&#x7C7B;&#x578B;&#x4E0D;&#x662F;&#x6211;&#x4EEC;&#x60F3;&#x8981;&#x7684;&#x3002;</p>
+<p>&#x4F8B;&#x5982;&#x4ECE;&#x7F51;&#x9875;&#x4E2D;&#x63D0;&#x53D6;&#x51FA;&#x6765;&#x7684;&#x5185;&#x5BB9;&#x662F;&#x5B57;&#x7B26;&#x4E32;&#xFF1A;</p>
+<pre><code class="lang-python">a = <span class="hljs-string">&quot;1234&quot;</span>
+b = <span class="hljs-string">&quot;3.4&quot;</span>
+c = <span class="hljs-string">&quot;-12&quot;</span>
+</code></pre>
+<p>&#x800C;&#x6211;&#x4EEC;&#x60F3;&#x628A;&#x5B83;&#x8868;&#x793A;&#x7684;&#x6570;&#x503C;&#x52A0;&#x8D77;&#x6765;&#x3002;&#x8FD9;&#x6837;&#x505A;&#x662F;&#x4E0D;&#x884C;&#x7684;&#xFF1A;</p>
+<pre><code class="lang-python">a + b + c <span class="hljs-comment"># &quot;12343.4-12&quot;</span>
+</code></pre>
+<p>&#x6CE8;&#x610F;&#x5BF9;&#x5B57;&#x7B26;&#x4E32;&#x505A;&#x7684; <code>+</code> &#x8FD0;&#x7B97;&#x53EA;&#x662F;&#x628A;&#x5B83;&#x4EEC;&#x4E32;&#x8FDE;&#x8D77;&#x6765;&#x3002;</p>
+<p>&#x4E3A;&#x4E86;&#x8FDB;&#x884C;&#x6570;&#x503C;&#x8BA1;&#x7B97;&#xFF0C;&#x9700;&#x8981;&#x5148;&#x628A;&#x5B83;&#x4EEC;&#x8F6C;&#x6362;&#x6210;&#x6570;&#x503C;&#x7C7B;&#x578B;&#x3002;&#x8BD5;&#x8BD5;&#x4E0B;&#x9762;&#x7684;&#x4EE3;&#x7801;:</p>
+<pre><code class="lang-python">int(<span class="hljs-string">&quot;123&quot;</span>)
+float(<span class="hljs-string">&quot;3.4&quot;</span>)
+</code></pre>
+<p>&#x8F6C;&#x6362;&#x6210;&#x6570;&#x503C;&#x7C7B;&#x578B;&#x540E;&#xFF0C;&#x5C31;&#x80FD;&#x8FDB;&#x884C;&#x6570;&#x503C;&#x8BA1;&#x7B97;&#x4E86;&#xFF1A;</p>
+<pre><code class="lang-python">a = <span class="hljs-string">&quot;1234&quot;</span>
+b = <span class="hljs-string">&quot;3.4&quot;</span>
+c = <span class="hljs-string">&quot;-12&quot;</span>
+int(a) + float(b) + float(c) <span class="hljs-comment"># 1225.4</span>
+</code></pre>
+<h2 id="&#x5BB9;&#x5668;&#x7C7B;&#x578B;&#x7684;&#x5904;&#x7406;">&#x5BB9;&#x5668;&#x7C7B;&#x578B;&#x7684;&#x5904;&#x7406;</h2>
+<p><code>list</code>&#xFF0C;<code>dict</code>&#xFF0C;<code>set</code> &#x7B49;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x7684;&#x5904;&#x7406;&#x3002;</p>
 <p><strong>&#x5904;&#x7406;&#x4E00;</strong>&#xFF1A;&#x6392;&#x5E8F;</p>
 <pre><code class="lang-python">li.sort()                   <span class="hljs-comment"># &#x7EAF;&#x7CB9;&#x7684;&#x6392;&#x5E8F;</span>
 li.sort(key=<span class="hljs-keyword">lambda</span> x: x[<span class="hljs-number">2</span>]) <span class="hljs-comment"># &#x6309;&#x7167;&#x7B2C;&#x4E8C;&#x5217;&#x6392;&#x5E8F;</span>
@@ -492,11 +516,28 @@ li.sort(key=<span class="hljs-keyword">lambda</span> x: x[<span class="hljs-numb
     <span class="hljs-keyword">if</span> ...
         result.append(e)
 </code></pre>
-<p><strong>&#x5904;&#x7406;&#x4E09;</strong>&#xFF1A;&#x8F6C;&#x6362; - &#x901A;&#x8FC7;&#x5FAA;&#x73AF;&#x751F;&#x6210;&#x65B0;&#x7684;&#x96C6;&#x5408;&#x6570;&#x636E;</p>
+<p><strong>&#x5904;&#x7406;&#x4E09;</strong>&#xFF1A;&#x91CD;&#x5851; - &#x901A;&#x8FC7;&#x5FAA;&#x73AF;&#x751F;&#x6210;&#x65B0;&#x7684;&#x96C6;&#x5408;&#x6570;&#x636E;</p>
 <pre><code class="lang-python">value = []
 <span class="hljs-keyword">for</span> key, value <span class="hljs-keyword">in</span> dict.items():
     result.append(value)
 </code></pre>
+<h2 id="&#x6570;&#x636E;&#x7EDF;&#x8BA1;">&#x6570;&#x636E;&#x7EDF;&#x8BA1;</h2>
+<p>&#x5047;&#x8BBE;&#x6211;&#x4EEC;&#x6709;&#x4E00;&#x4E2A; <code>list</code>&#xFF0C;&#x8D4B;&#x4E88;&#x4E86;&#x53D8;&#x91CF; <code>lst</code>&#xFF0C;&#x91CC;&#x9762;&#x5305;&#x542B;&#x82E5;&#x5E72;&#x9879;&#x6570;&#x636E;&#xFF0C;&#x6211;&#x4EEC;&#x8981;&#x8BA1;&#x7B97;&#x5B83;&#x7684;</p>
+<p>&#x6700;&#x5927;&#x503C;&#xFF1A;</p>
+<pre><code class="lang-python">max(lst)
+</code></pre>
+<p>&#x6700;&#x5C0F;&#x503C;</p>
+<pre><code class="lang-python">min(lst)
+</code></pre>
+<p>&#x548C;</p>
+<pre><code class="lang-python">sum = <span class="hljs-number">0</span>
+<span class="hljs-keyword">for</span> n <span class="hljs-keyword">in</span> lst:
+  sum += n
+</code></pre>
+<p>&#x5E73;&#x5747;&#x503C;</p>
+<pre><code class="lang-python">float(sum) / len(lst)
+</code></pre>
+<p>&#x6CE8;&#xFF1A;&#x5982;&#x679C; <code>sum</code> &#x662F;&#x6574;&#x6570;&#x76F8;&#x52A0;&#x5F97;&#x6765;&#xFF0C;&#x90A3;&#x5B83;&#x8FD8;&#x662F;&#x4E2A;&#x6574;&#x6570;&#x5BF9;&#x8C61;&#xFF08;<code>int</code>&#xFF09;&#xFF0C;&#x4E3A;&#x4E86;&#x9664;&#x6CD5;&#x53EF;&#x4EE5;&#x5F97;&#x5230;&#x5C0F;&#x6570;&#x7ED3;&#x679C;&#xFF0C;&#x9700;&#x8981;&#x5148;&#x8F6C;&#x6362;&#x6210;&#x6D6E;&#x70B9;&#x6570;&#x3002;</p>
 
                                 
                                 </section>
@@ -540,7 +581,7 @@ li.sort(key=<span class="hljs-keyword">lambda</span> x: x[<span class="hljs-numb
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"4.1 初见数据处理","level":"1.5.1","depth":2,"next":{"title":"4.2 数据处理应用实例","level":"1.5.2","depth":2,"path":"4.Processing/2-data-practice.md","ref":"4.Processing/2-data-practice.md","articles":[]},"previous":{"title":"数据处理","level":"1.5","depth":1,"path":"4.Processing/README.md","ref":"4.Processing/README.md","articles":[{"title":"4.1 初见数据处理","level":"1.5.1","depth":2,"path":"4.Processing/1-data-processing.md","ref":"4.Processing/1-data-processing.md","articles":[]},{"title":"4.2 数据处理应用实例","level":"1.5.2","depth":2,"path":"4.Processing/2-data-practice.md","ref":"4.Processing/2-data-practice.md","articles":[]},{"title":"4.3 选学：Pandas","level":"1.5.3","depth":2,"path":"4.Processing/3-pandas.md","ref":"4.Processing/3-pandas.md","articles":[]},{"title":"4.4 选学：光学字符识别","level":"1.5.4","depth":2,"path":"4.Processing/4-ocr.md","ref":"4.Processing/4-ocr.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"4.Processing/1-data-processing.md","mtime":"2018-10-26T08:24:16.466Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-10-26T07:23:27.041Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"4.1 初见数据处理","level":"1.5.1","depth":2,"next":{"title":"4.2 数据处理应用实例","level":"1.5.2","depth":2,"path":"4.Processing/2-data-practice.md","ref":"4.Processing/2-data-practice.md","articles":[]},"previous":{"title":"数据处理","level":"1.5","depth":1,"path":"4.Processing/README.md","ref":"4.Processing/README.md","articles":[{"title":"4.1 初见数据处理","level":"1.5.1","depth":2,"path":"4.Processing/1-data-processing.md","ref":"4.Processing/1-data-processing.md","articles":[]},{"title":"4.2 数据处理应用实例","level":"1.5.2","depth":2,"path":"4.Processing/2-data-practice.md","ref":"4.Processing/2-data-practice.md","articles":[]},{"title":"4.3 选学：Pandas","level":"1.5.3","depth":2,"path":"4.Processing/3-pandas.md","ref":"4.Processing/3-pandas.md","articles":[]},{"title":"4.4 选学：光学字符识别","level":"1.5.4","depth":2,"path":"4.Processing/4-ocr.md","ref":"4.Processing/4-ocr.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"4.Processing/1-data-processing.md","mtime":"2018-10-26T09:08:47.988Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-10-26T07:23:27.041Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
