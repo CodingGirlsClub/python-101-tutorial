@@ -203,14 +203,24 @@ if weather == "sunny" and temperature < 30:
 
 ```python
 a = 0
-while a <= 100：
+while a <= 100:
     print(a)
     a = a + 1
 ```
 
 同样注意别忘了 `:` 和缩进
 
-循环一般由循环条件和循环体组成。（todo: 补充 while 循环执行的动图）
+循环一般由循环条件和循环体组成。
+
+练习：使用 Spyder 观察程序的执行：
+
+1. 在 temp.py 中输入代码  
+  ![](./input_code.png)
+2. 点击 Debug file 工具  
+  ![](./debug_tools.png)
+3. 多次点击 Run current line 工具，观察 Variable explorer 的变化  
+  ![](./variable_explorer.png)
+4. 最后点击 Stop debugging 结束 debug
 
 **死循环** 的意思是：不会结束的循环。
 
