@@ -1,4 +1,6 @@
-## HTTP
+# HTTP 简介
+
+** 本节稍微了解一下便可 **
 
 HTTP 是超文本传输协议（hypertext transfer protocol）的缩写。
 
@@ -39,11 +41,13 @@ HTTP 响应由以下部分组成：
 - 4XX 客户端出问题了，如 400 非法请求，404 资源没找到
 - 5XX 服务器出问题了，如 500 服务器内部错误, 504 后台服务超时
 
-使用 Chrome 开发者工具查看请求：
+# 使用 Chrome 开发者工具查看请求
 
-(todo 截图)
+打开菜单：视图 -> 开发者 -> 开发者工具，选择 "网络" 栏，刷新页面
 
-## Requests 的使用
+![](./inspect.png)
+
+# Requests 的使用
 
 [Requests](http://docs.python-requests.org/en/master/) 是一个方便的 HTTP 请求库。
 

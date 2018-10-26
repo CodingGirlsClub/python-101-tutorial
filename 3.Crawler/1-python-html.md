@@ -1,14 +1,12 @@
 # HTML 与 爬虫
 
-## 为什么学习爬虫要掌握HTML基础
+## 为什么学习爬虫要掌握 HTML 基础
 
-
-
-## HTML 基础介绍
-
-HTML 是超文本标记语言（hypertext markup language）的缩写。
+HTML 是超文本标记语言（hypertext markup language）的缩写。大部分网页都是以 HTML 写成的。
 
 （常见语病：「HTML 语言」。「L」和「语言」同义重复了，直接说「HTML」即可）
+
+网络爬虫的工作就是代替人去阅读网页，抽取数据。人看到的是渲染好的网页投射进眼睛的影像，而爬虫看到的是 HTML。
 
 注：[MDN](https://developer.mozilla.org/zh-CN/docs/Learn) 是一个比较全面的 Web 初学者的教程，介绍 HTML，CSS 和 JavaScript，上面还有非常全面的 Web 参考。
 
@@ -65,13 +63,11 @@ CSS 是层叠样式表 (Cascade Stylesheet) 的缩写。
 
 `div .red a` 匹配 `<div>` 元素里面的 `red` 类任意元素里面的 `<a>` 元素
 
-### 快速获取选择器
+## 快速获取选择器
 
 打开网页，使用 Chrome 开发者工具，选择对应的元素，右键复制选择器
 
-![](https://ws4.sinaimg.cn/large/006tNbRwgy1fwg9c1zimaj31em0msdka.jpg)
-
-
+![](./copy_selector.png)
 
 ## 用 Python 解析 HTML
 

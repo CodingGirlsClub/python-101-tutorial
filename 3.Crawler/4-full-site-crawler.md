@@ -22,6 +22,12 @@ for i in range(3)
     url = f"https://tieba.baidu.com/p/1433563243?pn={page}"
 ```
 
+# 网站的结构
+
+网站由一个或者多个网页组成，各个网页之间以超链连接起来，画成图会像这样：
+
+![](https://upload.wikimedia.org/wikipedia/commons/8/83/Main_Page_Usability.png)
+
 # 全站爬虫的构造
 
 爬虫分为定向爬虫和全站爬虫。
@@ -70,7 +76,7 @@ def get_page(url):
         get_page(sub_url)
 ```
 
-这个函数调用了自己，叫做递归函数。
+这个函数调用了自己，叫做 **递归函数**。
 
 上面的代码还有一些问题，如果子页面恰好链接到了父页面，它就停不下来了（实际上会出现一个栈溢出错误）。我们可以用集合来保证不会爬取相同的网页。
 
