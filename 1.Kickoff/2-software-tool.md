@@ -7,13 +7,10 @@
   ![](https://www.anaconda.com/wp-content/themes/anaconda/images/logo-dark.png)
   - 你是否好奇「集成开发环境」是什么？那么赶紧用搜索引擎搜索一下关键字「集成开发环境」吧。
   - 略读 [集成开发环境 - 维基百科](https://zh.wikipedia.org/wiki/%E9%9B%86%E6%88%90%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83)
-- 注册[GitHub](https://github.com/)
-  - Github能用来做什么？请略读 [怎样使用 GitHub？ - 知乎](https://www.zhihu.com/question/20070065)
-- 安装[GitHub Desktop](https://desktop.github.com/)(请下载最新的Desktop Beta版本)
-  - 阅读并操作 [Authenticating to GitHub](https://help.github.com/desktop/guides/getting-started-with-github-desktop/authenticating-to-github/)
-  - 按照阅读内容，配置好[github.com](http://github.com) 的帐号信息
-  - **注意**：如果你是 Windows 32位系统，可能无法安装Github Desktop，请下载安装[SourceTree](https://www.sourcetreeapp.com/) 方法与Github Desktop雷同，如有疑问请咨询教练。
-- 使用 Anaconda 安装以下软件（Spyder，Beautifulsoup4, Requests 已默认安装）
+  - 注：Anaconda 的默认安装已包含教程中涉及的 Spyder，Pandas，Requests，BeautifulSoup 等软件。
+- 打开 Anaconda Navigator，在 Environments 界面下，打开 base 环境的运行菜单，选择 "Open Terminal：
+  ![](./anaconda_navigator.png)
+  然后输入下面的命令安装。
   ```python
   conda install -c conda-forge tesseract
   pip install pytesseract
@@ -21,10 +18,19 @@
 
 注：由于 Anaconda 里的 pytesseract 的大部分依赖已经过期，这里改用 PIP 安装。
 
+注：Anaconda 的安装包比较大，最好提前下载安装好。
+
 **Tasks For Tutors**：
 请教练介绍一下这些软件。Tips：尽量使用类比方法，让学员快速理解这些软件的用途。
 
 <!-- ------
+
+- 注册[GitHub](https://github.com/)
+  - Github能用来做什么？请略读 [怎样使用 GitHub？ - 知乎](https://www.zhihu.com/question/20070065)
+- 安装[GitHub Desktop](https://desktop.github.com/)(请下载最新的Desktop Beta版本)
+  - 阅读并操作 [Authenticating to GitHub](https://help.github.com/desktop/guides/getting-started-with-github-desktop/authenticating-to-github/)
+  - 按照阅读内容，配置好[github.com](http://github.com) 的帐号信息
+  - **注意**：如果你是 Windows 32位系统，可能无法安装Github Desktop，请下载安装[SourceTree](https://www.sourcetreeapp.com/) 方法与Github Desktop雷同，如有疑问请咨询教练。
 
 ### Github Desktop 配置
 
@@ -56,11 +62,10 @@
 
 ------
 
-### 辅助材料
+# 辅助资料
 
-Cheatsheet
+Python 小抄：
 
-- 正面：Python 语法和常用函数
-- 反面：Chrome 拷贝选择器的图示
+[Laurent Pointal's Python 3 Cheat Sheet](./mementopython3-english.pdf)
 
-(TODO printable cheatsheet)
+方便的话可以双面彩打到一张 A4 纸上作为学员手边的参考。
