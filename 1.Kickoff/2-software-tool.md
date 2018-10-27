@@ -16,7 +16,7 @@
   pip install pytesseract
   ```
 
-注：Anaconda Navigator 的 Terminal 只支持 bash，如果是 zsh 或者 fish，需要自己配置路径。
+注：Anaconda Navigator 的 Terminal 只支持 bash（绝大部分学员应该都是 bash）。如果是 zsh 或者 fish，需要自己把 anaconda 的 bin 目录添加到 `$PATH` 中。
 
 注：由于 Anaconda 里的 pytesseract 的大部分依赖已经过期，这里改用 PIP 安装。
 

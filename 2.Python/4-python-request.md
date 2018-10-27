@@ -58,3 +58,13 @@ print(response.text) # 打印网页的 HTML 源代码
 ```
 
 可以看到以 `<!DOCTYPE html>` 开头的 HTML 内容，下面我们先讲解一下 Python 进阶语法，然后再介绍如何从 HTML 中提取信息。
+
+如果请求的是一张图片，图片文件往往包含大量的非字符数据，需要用 `response.content` 获得内容
+
+```python
+response = requests.get('https://ws4.sinaimg.cn/large/006tNbRwly1fwict5oyqdj31kw1kw124.jpg')
+with open("crawled_image.jpg", 'rb') as f:
+    f.write(response.content)
+```
+
+因为写入的是二进制数据，这里的 `open` 使用了 `'rb'` 参数表明用二进制输出流写文件。
