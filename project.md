@@ -19,7 +19,7 @@
   > 用 Chrome 开发者工具，复制选择器，得到 `#comic > img`
 4. 如何用 Python 提取图片元素的 `src` 属性？如何补足成完整的图片地址？
   > ```python
-  > src = Beautiful(page).select("#comic > img")["src"]
+  > src = Beautiful(page).select("#comic > img")[0]["src"]
   > image_link = f"http:{src}"
   > ```
 5. Python 如何保存文件？
