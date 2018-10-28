@@ -8,17 +8,6 @@
   - 你是否好奇「集成开发环境」是什么？那么赶紧用搜索引擎搜索一下关键字「集成开发环境」吧。
   - 略读 [集成开发环境 - 维基百科](https://zh.wikipedia.org/wiki/%E9%9B%86%E6%88%90%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83)
   - 注：Anaconda 的默认安装已包含教程中涉及的 Spyder，Pandas，Requests，BeautifulSoup 等软件。
-- 打开 Anaconda Navigator，在 Environments 界面下，打开 base 环境的运行菜单，选择 "Open Terminal：
-  ![](./anaconda_navigator.png)
-  然后输入下面的命令安装。
-  ```python
-  conda install -c conda-forge tesseract
-  pip install pytesseract
-  ```
-
-注：Anaconda Navigator 的 Terminal 只支持 bash（绝大部分学员应该都是 bash）。如果是 zsh 或者 fish，需要自己把 anaconda 的 bin 目录添加到 `$PATH` 中。
-
-注：由于 Anaconda 里的 pytesseract 的大部分依赖已经过期，这里改用 PIP 安装。
 
 注：Anaconda 的安装包比较大，最好提前下载安装好。
 

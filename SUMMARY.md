@@ -21,6 +21,5 @@
   - [4.1 初见数据处理](4.Processing/1-data-processing.md)
   - [4.2 数据处理应用实例](4.Processing/2-data-practice.md)
   - [4.3 选学：Pandas](4.Processing/3-pandas.md)
-  - [4.4 选学：光学字符识别](4.Processing/4-ocr.md)
 * [大作业和分享](project.md)
 * [后续学习建议](learning-suggestions.md)
