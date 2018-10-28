@@ -1,0 +1,5 @@
+﻿{
+    "plugins": [
+        "mathjax-update-cdn"
+    ]
+}
