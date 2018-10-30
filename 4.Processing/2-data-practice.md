@@ -1,5 +1,9 @@
 ## 理解数据
 
+> Cooking time: 20 mins active / 30 mins passive
+>
+> **Tasks For Coaches**: 教练讲解和演示该节内容，请教练灵活应变。
+
 理解数据的几个层次：
 
 - 形式理解：了解数据文件的格式

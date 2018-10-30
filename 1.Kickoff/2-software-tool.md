@@ -6,13 +6,13 @@
 - 下载并安装 [集成开发环境 Anaconda](https://www.anaconda.com/download/)，记得选择Python 3.7 Version
   ![](https://www.anaconda.com/wp-content/themes/anaconda/images/logo-dark.png)
   - 你是否好奇「集成开发环境」是什么？那么赶紧用搜索引擎搜索一下关键字「集成开发环境」吧。
-  - 略读 [集成开发环境 - 维基百科](https://zh.wikipedia.org/wiki/%E9%9B%86%E6%88%90%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83)
-  - 注：Anaconda 的默认安装已包含教程中涉及的 Spyder，Pandas，Requests，BeautifulSoup 等软件。
+  - 略读 [集成开发环境 - 维基百科](https://zh.wikipedia.org/wiki/%E9%9B%86%E6%88%90%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83)  
+  注意：
+  > - Anaconda 的默认安装已包含教程中涉及的 Spyder，Pandas，Requests，BeautifulSoup 等软件。
+  > - Anaconda 的安装包比较大，最好提前下载安装好。
 
-注：Anaconda 的安装包比较大，最好提前下载安装好。
-
-**Tasks For Tutors**：
-请教练介绍一下这些软件。Tips：尽量使用类比方法，让学员快速理解这些软件的用途。
+**Tasks For Coaches**：
+请教练简单介绍这些软件。Tips：尽量使用类比方法，让学员快速理解这些软件的用途。
 
 <!-- ------
 

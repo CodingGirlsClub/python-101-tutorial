@@ -1,10 +1,10 @@
 # 数据工程介绍
 
-## 什么是数据工程？
-
-> Cooking time: 20 mins active / 25 mins passive
+> Cooking time: 10 mins active / 15 mins passive
 >
-> **Tasks For Tutors：** 讲师介绍数据工程概述，帮助学员了解数据工程全局观。
+> **Tasks For Instructors：** 讲师介绍数据工程概述，帮助学员了解数据工程全局观。
+
+## 什么是数据工程？
 
 数据（資料），Data （Datum 的复数）经常和「信息」「資訊」可以互用。
 

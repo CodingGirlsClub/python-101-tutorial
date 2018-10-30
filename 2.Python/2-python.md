@@ -1,20 +1,21 @@
 # Python 简介
 
+> Cooking time: 15 mins active / 20 mins passive
+
 Python 是计算机入门首选语言之一，编写简单，有丰富的生态系统和库，在很多行业和学科都有出色的表现。当前的稳定版本是 3.7。
 
 运行 Python 程序需要 Python 解释器（其实是编译+执行）。
 
-> **Task for Tutors**:
->
-> - 解释什么是解释器
-> - 解释什么是编译
-> - 解释什么是执行
+**Task for Coaches**:
+- 解释什么是解释器
+- 解释什么是编译
+- 解释什么是执行
 
 ## 第一个 Python 程序
 
 1. 使用IDE Anaconda打开 spyder
 
-   ![image-20181023182654100](https://ws4.sinaimg.cn/large/006tNbRwly1fwic0c9oomj310y0m4785.jpg)
+  ![image-20181023182654100](https://ws4.sinaimg.cn/large/006tNbRwly1fwic0c9oomj310y0m4785.jpg)
 
 2. 新建python文件：
 
@@ -44,13 +45,8 @@ Python 是计算机入门首选语言之一，编写简单，有丰富的生态�
 
 可以看到 Python 的哲学，描述于一首诗中。上面的代码中，`import` 语句的作用是引入一个包，而这个包 `this` 的作用是打印这首诗。
 
-## 编程
-
-### 任务分解
-
-编程的第一步就是把要做的事情，分解成一步一步，用计算机语言讲清楚，让计算机可以执行。
-
-### 编程思维
+## 编程思维 - 任务分解
+编程的第一步就是把要做的事情分解成一步一步，用计算机语言讲清楚，让计算机可以执行。
 
 ![图片来于[Computational Thinking:Decomposition | Abstraction | Patterns | Algorithms](https://www.computationalthinkers.com/product/computationalthinking/)](https://ws4.sinaimg.cn/large/006tNbRwly1fwict5oyqdj31kw1kw124.jpg)
 

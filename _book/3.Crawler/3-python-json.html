@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="2-login-and-js-render.html" />
+    <link rel="next" href="4-login-and-js-render.html" />
     
     
-    <link rel="prev" href="4-full-site-crawler.html" />
+    <link rel="prev" href="2-full-site-crawler.html" />
     
 
     </head>
@@ -218,7 +218,7 @@
                 <a href="../2.Python/4-python-request.html">
             
                     
-                    2.4 HTTP
+                    2.4 Python 请求
             
                 </a>
             
@@ -271,9 +271,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.2" data-path="4-full-site-crawler.html">
+        <li class="chapter " data-level="1.4.2" data-path="2-full-site-crawler.html">
             
-                <a href="4-full-site-crawler.html">
+                <a href="2-full-site-crawler.html">
             
                     
                     3.2 爬虫实战
@@ -297,9 +297,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.4" data-path="2-login-and-js-render.html">
+        <li class="chapter " data-level="1.4.4" data-path="4-login-and-js-render.html">
             
-                <a href="2-login-and-js-render.html">
+                <a href="4-login-and-js-render.html">
             
                     
                     3.4 选学：爬虫的难点
@@ -373,12 +373,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.6" data-path="../project.html">
+        <li class="chapter " data-level="1.6" data-path="../demo.html">
             
-                <a href="../project.html">
+                <a href="../demo.html">
             
                     
-                    大作业和分享
+                    Demo练习
             
                 </a>
             
@@ -386,12 +386,25 @@
             
         </li>
     
-        <li class="chapter " data-level="1.7" data-path="../learning-suggestions.html">
+        <li class="chapter " data-level="1.7" data-path="../project.html">
             
-                <a href="../learning-suggestions.html">
+                <a href="../project.html">
             
                     
-                    后续学习建议
+                    大作业
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../sharing-and-learning-suggestions.html">
+            
+                <a href="../sharing-and-learning-suggestions.html">
+            
+                    
+                    分享与后续学习建议
             
                 </a>
             
@@ -447,18 +460,18 @@
                                 <h1 id="json-&#x7B80;&#x4ECB;">JSON &#x7B80;&#x4ECB;</h1>
 <p>JSON &#x662F;&#x4E00;&#x79CD;&#x6570;&#x636E;&#x683C;&#x5F0F;&#x3002;</p>
 <p>&#x6700;&#x51C6;&#x786E;&#x53C8;&#x7B80;&#x6D01;&#x7684;&#x4ECB;&#x7ECD;&#xFF1A; <a href="https://json.org/json-zh.html" target="_blank">https://json.org/json-zh.html</a></p>
-<h1 id="&#x5904;&#x7406;-json-&#x7684;&#x5E93;">&#x5904;&#x7406; JSON &#x7684;&#x5E93;</h1>
+<h2 id="&#x5904;&#x7406;-json-&#x7684;&#x5E93;">&#x5904;&#x7406; JSON &#x7684;&#x5E93;</h2>
 <p>&#x6807;&#x51C6;&#x7684; JSON &#x5E93;&#x53EF;&#x4EE5;&#x628A; JSON &#x7C7B;&#x578B;&#x548C; Python &#x7C7B;&#x578B;&#x76F8;&#x4E92;&#x8F6C;&#x6362;</p>
 <pre><code class="lang-python"><span class="hljs-keyword">import</span> json
 
 json_string = json.dumps([<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, {<span class="hljs-string">&quot;foo&quot;</span>: true, <span class="hljs-string">&quot;bar&quot;</span>: <span class="hljs-keyword">None</span>}])
 json.loads(json_string)
 </code></pre>
-<h1 id="&#x83B7;&#x53D6;-json-&#x54CD;&#x5E94;">&#x83B7;&#x53D6; JSON &#x54CD;&#x5E94;</h1>
+<h2 id="&#x83B7;&#x53D6;-json-&#x54CD;&#x5E94;">&#x83B7;&#x53D6; JSON &#x54CD;&#x5E94;</h2>
 <pre><code class="lang-python">response = requests.get(<span class="hljs-string">&quot;http://some.website.com/data.json&quot;</span>)
 response.json()
 </code></pre>
-<h1 id="web-api">Web API</h1>
+<h2 id="web-api">Web API</h2>
 <p>API -- &#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x7F16;&#x7A0B;&#x63A5;&#x53E3;&#xFF08;Application Programming Interface&#xFF09;&#x7684;&#x7F29;&#x5199;&#x3002;</p>
 <p>&#x5F88;&#x591A;&#x7F51;&#x7AD9;&#x63D0;&#x4F9B;&#x4E86;&#x57FA;&#x4E8E; JSON &#x548C; HTTP &#x7684; API&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x9605;&#x8BFB;&#x6587;&#x6863;&#xFF0C;&#x5B66;&#x4E60;&#x5176; API &#x7684;&#x4F7F;&#x7528;&#x65B9;&#x6CD5;&#x3002;</p>
 
@@ -488,12 +501,12 @@ response.json()
 
             
                 
-                <a href="4-full-site-crawler.html" class="navigation navigation-prev " aria-label="Previous page: 3.2 爬虫实战">
+                <a href="2-full-site-crawler.html" class="navigation navigation-prev " aria-label="Previous page: 3.2 爬虫实战">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="2-login-and-js-render.html" class="navigation navigation-next " aria-label="Next page: 3.4 选学：爬虫的难点">
+                <a href="4-login-and-js-render.html" class="navigation navigation-next " aria-label="Next page: 3.4 选学：爬虫的难点">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -504,7 +517,7 @@ response.json()
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"3.3 选学：JSON 简介","level":"1.4.3","depth":2,"next":{"title":"3.4 选学：爬虫的难点","level":"1.4.4","depth":2,"path":"3.Crawler/2-login-and-js-render.md","ref":"3.Crawler/2-login-and-js-render.md","articles":[]},"previous":{"title":"3.2 爬虫实战","level":"1.4.2","depth":2,"path":"3.Crawler/4-full-site-crawler.md","ref":"3.Crawler/4-full-site-crawler.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"3.Crawler/3-python-json.md","mtime":"2018-10-22T15:39:10.763Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-10-28T14:13:11.826Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"3.3 选学：JSON 简介","level":"1.4.3","depth":2,"next":{"title":"3.4 选学：爬虫的难点","level":"1.4.4","depth":2,"path":"3.Crawler/4-login-and-js-render.md","ref":"3.Crawler/4-login-and-js-render.md","articles":[]},"previous":{"title":"3.2 爬虫实战","level":"1.4.2","depth":2,"path":"3.Crawler/2-full-site-crawler.md","ref":"3.Crawler/2-full-site-crawler.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"3.Crawler/3-python-json.md","mtime":"2018-10-30T03:33:39.299Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-10-30T04:36:00.086Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -512,10 +525,6 @@ response.json()
         
     <script src="../gitbook/gitbook.js"></script>
     <script src="../gitbook/theme.js"></script>
-    
-        
-        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
-        
     
         
         <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>

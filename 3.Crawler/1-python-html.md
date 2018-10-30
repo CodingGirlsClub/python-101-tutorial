@@ -1,5 +1,9 @@
 # HTML 与 爬虫
 
+> Cooking time: 20 mins active / 25 mins passive
+>
+> **Tasks For Instructors：** 讲师讲解和演示该节内容，若相关内容认为需要教练辅助，请讲师灵活应变。
+
 ## 为什么学习爬虫要掌握 HTML 基础
 
 HTML 是超文本标记语言（hypertext markup language）的缩写。大部分网页都是以 HTML 写成的。

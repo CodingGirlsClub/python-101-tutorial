@@ -1,5 +1,12 @@
 # Python 语法进阶
 
+> Cooking time: 15 mins active / 20 mins passive
+
+> **Learning by Doing**:
+> - 提示：切换到英文输入法编程可以避免一些用错符号的错误。
+> - **Tasks for Learners**: 请学员创建第3个Python文件 `python_advanced_syntax_practice.py`, 对下列Python语法进行练习。
+> - **Tasks for Coaches**: 请教练对学员的练习提供一定的辅助，请控制好时间。
+
 下面介绍更多的 Python 语法。
 
 如果对某个语法不熟悉，推荐到 Python 的官方网站寻找详细的 Python 语法参考：https://docs.python.org/3.7/reference/index.html 。

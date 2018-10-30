@@ -1,10 +1,14 @@
 # 爬虫实战
 
+> Cooking time: 30 mins active / 45 mins passive
+>
+> **Tasks For Instructors：** 讲师讲解和演示该节内容，若相关内容认为需要教练辅助，请讲师灵活应变。
+
 - 如果网站提供了 API，那么用 API 比从网页解析要更简单。
 - 如果 API 不能满足需求，再去考虑做网页爬虫。
 - 总结网址的规律，写成循环。
 
-# 总结规律
+## 总结规律
 
 例如贴吧的一个帖子，首页，第二页，第三页的网址分别如下：
 
@@ -21,13 +25,13 @@ for page in range(1, 4)
     url = f"https://tieba.baidu.com/p/1433563243?pn={page}"
 ```
 
-# 网站的结构
+## 网站的结构
 
 网站由一个或者多个网页组成，各个网页之间以超链连接起来，画成图会像这样：
 
 ![](https://upload.wikimedia.org/wikipedia/commons/8/83/Main_Page_Usability.png)
 
-# 全站爬虫的构造
+## 全站爬虫的构造
 
 爬虫分为定向爬虫和全站爬虫。
 
