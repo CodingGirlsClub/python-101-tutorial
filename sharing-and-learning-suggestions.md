@@ -21,3 +21,9 @@
   例如在 [GitHub](https://github.com) 上阅读开源代码，参与开源项目。
 
   例如关注 [Hacker News](https://news.ycombinator.com)，了解业内动态。
+
+# 参考书目
+
+- [Learn Python 3 the Hard Way](https://book.douban.com/subject/27094555/)
+- [Web Scrapying with Python](https://book.douban.com/subject/26284925/)
+- [Python for Data Analysis](https://book.douban.com/subject/27011335/)

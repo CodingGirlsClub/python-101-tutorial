@@ -2,8 +2,8 @@
 > Cooking time: 30 mins active / 45 mins passive
 
 > **Learning by Doing**:
-> - 提示：切换到英文输入法编程可以避免一些用错符号的错误。
-> - **Tasks for Learners**: 请学员创建第二个Python文件 `python_syntax_practice.py`, 对下列Python语法进行练习。
+> - 建议切换到英文输入法编程，可以避免一些用错符号的错误。
+> - **Tasks for Learners**: 请学员创建第二个 Python 文件 `python_syntax_practice.py`, 对下列 Python 语法进行练习。
 > - **Tasks for Coaches**: 请教练对学员的练习提供一定的辅助，请控制好时间。
 
 ## 魔法注释
