@@ -24,6 +24,6 @@
 
 # 参考书目
 
-- [Learn Python 3 the Hard Way](https://book.douban.com/subject/27094555/)
-- [Web Scrapying with Python](https://book.douban.com/subject/26284925/)
-- [Python for Data Analysis](https://book.douban.com/subject/27011335/)
+- [笨方法学 Python 3](https://book.douban.com/subject/30237842/)
+- [Python 网络数据收集](https://book.douban.com/subject/26740503/)
+- [Python 数据处理](https://book.douban.com/subject/27074608/)
