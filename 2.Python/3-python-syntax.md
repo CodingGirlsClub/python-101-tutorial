@@ -8,7 +8,7 @@
 
 ## 魔法注释
 
-惯例：把这一行写在 Python 文件的头一行，表达这个文件的非 ASCII 字符的编码为 UTF-8，不然遇到中文会出现编码错误。
+惯例：把这一行写在 Python 文件的头一行，表达这个文件的非 [ASCII](https://zh.wikipedia.org/wiki/ASCII) 字符的编码为 [UTF-8](https://zh.wikipedia.org/wiki/UTF-8)，不然遇到中文会出现编码错误。
 
 ```python
 # encoding: utf-8
@@ -31,7 +31,7 @@
 -1234
 ```
 
-小数（浮点数），类型为 `float`
+小数（浮点数），类型为 `float`，例如
 
 ```python
 3.1415926
@@ -89,6 +89,12 @@ type(3) # int
 1 + 1
 2.5 * 3
 4 / 2
+```
+
+`%` 返回除法的余数：
+
+```python
+5 % 3
 ```
 
 除以 0 会得到 NaN（Not a Number）
@@ -242,7 +248,28 @@ while True:
 - `continue` 进入下一个轮回
 - `break` 结束循环
 
-(todo 循环控制例子)
+例：下面的代码打印 1 到 10，通过判断 `i` 是否增加到 10 决定结束循环：
+
+```python
+i = 1
+while True:
+    print(i)
+    if i == 10:
+        break
+    i = i + 1
+```
+
+例：下面的代码打印 1 到 10 之间的偶数，当 `i` 是奇数时通过 `continue` 跳过循环体中的其余代码。
+
+```python
+i = 1
+while i <= 10:
+    if i % 2 == 1:
+        i = i + 1
+        continue
+    print(i)
+    i = i + 1
+```
 
 ## 函数
 
@@ -279,8 +306,6 @@ print(double(4))
 ```
 
 小提示：Python 的运算符 `+`，`-`，`*`，`/` 等等其实都是函数。
-
-(todo 小问题和练习)
 
 ## 输入和输出简介
 
