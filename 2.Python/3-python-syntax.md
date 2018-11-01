@@ -83,7 +83,7 @@ type(3) # int
 
 ## 运算
 
-在 Jupyter 中输入下面的表达式试试：
+在 IPython 中输入下面的表达式试试：
 
 ```python
 1 + 1

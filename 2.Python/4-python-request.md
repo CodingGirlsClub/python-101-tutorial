@@ -72,3 +72,9 @@ with open("crawled_image.jpg", 'rb') as f:
 ```
 
 因为写入的是二进制数据，这里的 `open` 使用了 `'rb'` 参数表明用二进制输出流写文件。
+
+`requests` 还提供了方便的方法获取网页上的所有链接：
+
+```python
+response.links
+```
