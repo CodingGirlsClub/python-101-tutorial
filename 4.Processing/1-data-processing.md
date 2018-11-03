@@ -109,7 +109,7 @@ for e in li:
 **处理三**：重塑 - 通过循环生成新的集合数据
 
 ```python
-value = []
+result = []
 for key, value in dict.items():
     result.append(value)
 ```

@@ -67,11 +67,11 @@ print(response.text) # 打印网页的 HTML 源代码
 
 ```python
 response = requests.get('https://ws4.sinaimg.cn/large/006tNbRwly1fwict5oyqdj31kw1kw124.jpg')
-with open("crawled_image.jpg", 'rb') as f:
+with open("crawled_image.jpg", 'wb') as f:
     f.write(response.content)
 ```
 
-因为写入的是二进制数据，这里的 `open` 使用了 `'rb'` 参数表明用二进制输出流写文件。
+因为写入的是二进制数据，这里的 `open` 使用了 `'wb'` 参数表明用二进制输出流写文件。
 
 `requests` 还提供了方便的方法获取网页上的所有链接：
 
