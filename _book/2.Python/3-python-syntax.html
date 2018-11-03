@@ -468,7 +468,7 @@
 </ul>
 </blockquote>
 <h2 id="&#x9B54;&#x6CD5;&#x6CE8;&#x91CA;">&#x9B54;&#x6CD5;&#x6CE8;&#x91CA;</h2>
-<p>&#x60EF;&#x4F8B;&#xFF1A;&#x628A;&#x8FD9;&#x4E00;&#x884C;&#x5199;&#x5728; Python &#x6587;&#x4EF6;&#x7684;&#x5934;&#x4E00;&#x884C;&#xFF0C;&#x8868;&#x8FBE;&#x8FD9;&#x4E2A;&#x6587;&#x4EF6;&#x7684;&#x975E; ASCII &#x5B57;&#x7B26;&#x7684;&#x7F16;&#x7801;&#x4E3A; UTF-8&#xFF0C;&#x4E0D;&#x7136;&#x9047;&#x5230;&#x4E2D;&#x6587;&#x4F1A;&#x51FA;&#x73B0;&#x7F16;&#x7801;&#x9519;&#x8BEF;&#x3002;</p>
+<p>&#x60EF;&#x4F8B;&#xFF1A;&#x628A;&#x8FD9;&#x4E00;&#x884C;&#x5199;&#x5728; Python &#x6587;&#x4EF6;&#x7684;&#x5934;&#x4E00;&#x884C;&#xFF0C;&#x8868;&#x8FBE;&#x8FD9;&#x4E2A;&#x6587;&#x4EF6;&#x7684;&#x975E; <a href="https://zh.wikipedia.org/wiki/ASCII" target="_blank">ASCII</a> &#x5B57;&#x7B26;&#x7684;&#x7F16;&#x7801;&#x4E3A; <a href="https://zh.wikipedia.org/wiki/UTF-8" target="_blank">UTF-8</a>&#xFF0C;&#x4E0D;&#x7136;&#x9047;&#x5230;&#x4E2D;&#x6587;&#x4F1A;&#x51FA;&#x73B0;&#x7F16;&#x7801;&#x9519;&#x8BEF;&#x3002;</p>
 <pre><code class="lang-python"><span class="hljs-comment"># encoding: utf-8</span>
 </code></pre>
 <h2 id="&#x6CE8;&#x91CA;">&#x6CE8;&#x91CA;</h2>
@@ -480,7 +480,7 @@
 <pre><code class="lang-python"><span class="hljs-number">1234</span>
 <span class="hljs-number">-1234</span>
 </code></pre>
-<p>&#x5C0F;&#x6570;&#xFF08;&#x6D6E;&#x70B9;&#x6570;&#xFF09;&#xFF0C;&#x7C7B;&#x578B;&#x4E3A; <code>float</code></p>
+<p>&#x5C0F;&#x6570;&#xFF08;&#x6D6E;&#x70B9;&#x6570;&#xFF09;&#xFF0C;&#x7C7B;&#x578B;&#x4E3A; <code>float</code>&#xFF0C;&#x4F8B;&#x5982;</p>
 <pre><code class="lang-python"><span class="hljs-number">3.1415926</span>
 </code></pre>
 <p>&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x7C7B;&#x578B;&#x4E3A; <code>str</code></p>
@@ -510,10 +510,13 @@
 <pre><code class="lang-python">type(<span class="hljs-number">3</span>) <span class="hljs-comment"># int</span>
 </code></pre>
 <h2 id="&#x8FD0;&#x7B97;">&#x8FD0;&#x7B97;</h2>
-<p>&#x5728; Jupyter &#x4E2D;&#x8F93;&#x5165;&#x4E0B;&#x9762;&#x7684;&#x8868;&#x8FBE;&#x5F0F;&#x8BD5;&#x8BD5;&#xFF1A;</p>
+<p>&#x5728; IPython &#x4E2D;&#x8F93;&#x5165;&#x4E0B;&#x9762;&#x7684;&#x8868;&#x8FBE;&#x5F0F;&#x8BD5;&#x8BD5;&#xFF1A;</p>
 <pre><code class="lang-python"><span class="hljs-number">1</span> + <span class="hljs-number">1</span>
 <span class="hljs-number">2.5</span> * <span class="hljs-number">3</span>
 <span class="hljs-number">4</span> / <span class="hljs-number">2</span>
+</code></pre>
+<p><code>%</code> &#x8FD4;&#x56DE;&#x9664;&#x6CD5;&#x7684;&#x4F59;&#x6570;&#xFF1A;</p>
+<pre><code class="lang-python"><span class="hljs-number">5</span> % <span class="hljs-number">3</span>
 </code></pre>
 <p>&#x9664;&#x4EE5; 0 &#x4F1A;&#x5F97;&#x5230; NaN&#xFF08;Not a Number&#xFF09;</p>
 <pre><code class="lang-python"><span class="hljs-number">1</span> / <span class="hljs-number">0</span> <span class="hljs-comment"># NaN</span>
@@ -617,7 +620,23 @@ temperature = <span class="hljs-number">20</span>
 <li><code>continue</code> &#x8FDB;&#x5165;&#x4E0B;&#x4E00;&#x4E2A;&#x8F6E;&#x56DE;</li>
 <li><code>break</code> &#x7ED3;&#x675F;&#x5FAA;&#x73AF;</li>
 </ul>
-<p>(todo &#x5FAA;&#x73AF;&#x63A7;&#x5236;&#x4F8B;&#x5B50;)</p>
+<p>&#x4F8B;&#xFF1A;&#x4E0B;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x6253;&#x5370; 1 &#x5230; 10&#xFF0C;&#x901A;&#x8FC7;&#x5224;&#x65AD; <code>i</code> &#x662F;&#x5426;&#x589E;&#x52A0;&#x5230; 10 &#x51B3;&#x5B9A;&#x7ED3;&#x675F;&#x5FAA;&#x73AF;&#xFF1A;</p>
+<pre><code class="lang-python">i = <span class="hljs-number">1</span>
+<span class="hljs-keyword">while</span> <span class="hljs-keyword">True</span>:
+    print(i)
+    <span class="hljs-keyword">if</span> i == <span class="hljs-number">10</span>:
+        <span class="hljs-keyword">break</span>
+    i = i + <span class="hljs-number">1</span>
+</code></pre>
+<p>&#x4F8B;&#xFF1A;&#x4E0B;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x6253;&#x5370; 1 &#x5230; 10 &#x4E4B;&#x95F4;&#x7684;&#x5076;&#x6570;&#xFF0C;&#x5F53; <code>i</code> &#x662F;&#x5947;&#x6570;&#x65F6;&#x901A;&#x8FC7; <code>continue</code> &#x8DF3;&#x8FC7;&#x5FAA;&#x73AF;&#x4F53;&#x4E2D;&#x7684;&#x5176;&#x4F59;&#x4EE3;&#x7801;&#x3002;</p>
+<pre><code class="lang-python">i = <span class="hljs-number">1</span>
+<span class="hljs-keyword">while</span> i &lt;= <span class="hljs-number">10</span>:
+    <span class="hljs-keyword">if</span> i % <span class="hljs-number">2</span> == <span class="hljs-number">1</span>:
+        i = i + <span class="hljs-number">1</span>
+        <span class="hljs-keyword">continue</span>
+    print(i)
+    i = i + <span class="hljs-number">1</span>
+</code></pre>
 <h2 id="&#x51FD;&#x6570;">&#x51FD;&#x6570;</h2>
 <p>&#x6211;&#x4EEC;&#x5B66;&#x4E60;&#x4E86;&#x7528;&#x4E00;&#x4E2A;&#x8BCD;&#x4EE3;&#x8868;&#x503C;&#xFF08;&#x53D8;&#x91CF;&#xFF09;&#xFF0C;&#x5728; Python &#x4E2D;&#x6211;&#x4EEC;&#x4E5F;&#x80FD;&#x7528;&#x4E00;&#x4E2A;&#x8BCD;&#x4EE3;&#x8868;&#x4E00;&#x6BB5;&#x4EE3;&#x7801;&#x3002;</p>
 <p>&#x5B9A;&#x4E49;&#x51FD;&#x6570;&#x7528; <code>def</code> &#x5173;&#x952E;&#x5B57;&#xFF0C;&#x63A5;&#x4E0A;&#x51FD;&#x6570;&#x540D;&#x79F0;&#xFF0C;&#x53C2;&#x6570;&#x5217;&#x8868;&#x548C;&#x5192;&#x53F7;&#x3002;&#x8BD5;&#x7406;&#x89E3;&#x4E0B;&#x9762;&#x7684;&#x4EE3;&#x7801;&#xFF1A;</p>
@@ -637,7 +656,6 @@ four_times = double(twice)
 <pre><code class="lang-python">print(double(<span class="hljs-number">4</span>))
 </code></pre>
 <p>&#x5C0F;&#x63D0;&#x793A;&#xFF1A;Python &#x7684;&#x8FD0;&#x7B97;&#x7B26; <code>+</code>&#xFF0C;<code>-</code>&#xFF0C;<code>*</code>&#xFF0C;<code>/</code> &#x7B49;&#x7B49;&#x5176;&#x5B9E;&#x90FD;&#x662F;&#x51FD;&#x6570;&#x3002;</p>
-<p>(todo &#x5C0F;&#x95EE;&#x9898;&#x548C;&#x7EC3;&#x4E60;)</p>
 <h2 id="&#x8F93;&#x5165;&#x548C;&#x8F93;&#x51FA;&#x7B80;&#x4ECB;">&#x8F93;&#x5165;&#x548C;&#x8F93;&#x51FA;&#x7B80;&#x4ECB;</h2>
 <p>IO &#x662F;&#x8F93;&#x5165;/&#x8F93;&#x51FA;&#xFF08;input / output&#xFF09;&#x7684;&#x7F29;&#x5199;&#x3002;</p>
 <p>IO &#x662F;&#x7A0B;&#x5E8F;&#x80FD;&#x4ECE;&#x771F;&#x5B9E;&#x4E16;&#x754C;&#x83B7;&#x53D6;&#x4FE1;&#x606F; (&#x8F93;&#x5165;)&#xFF0C;&#x5BF9;&#x771F;&#x5B9E;&#x4E16;&#x754C;&#x4EA7;&#x751F;&#x5F71;&#x54CD;&#xFF08;&#x8F93;&#x51FA;&#xFF09;&#x7684;&#x57FA;&#x7840;&#x3002;</p>
@@ -715,7 +733,7 @@ print(data)
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"2.3 Python 语法","level":"1.3.3","depth":2,"next":{"title":"2.4 Python 请求","level":"1.3.4","depth":2,"path":"2.Python/4-python-request.md","ref":"2.Python/4-python-request.md","articles":[]},"previous":{"title":"2.2 Python 介绍","level":"1.3.2","depth":2,"path":"2.Python/2-python.md","ref":"2.Python/2-python.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"2.Python/3-python-syntax.md","mtime":"2018-10-31T14:43:52.303Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-10-31T14:45:45.202Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"2.3 Python 语法","level":"1.3.3","depth":2,"next":{"title":"2.4 Python 请求","level":"1.3.4","depth":2,"path":"2.Python/4-python-request.md","ref":"2.Python/4-python-request.md","articles":[]},"previous":{"title":"2.2 Python 介绍","level":"1.3.2","depth":2,"path":"2.Python/2-python.md","ref":"2.Python/2-python.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"2.Python/3-python-syntax.md","mtime":"2018-11-03T00:21:25.334Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-11-03T07:29:27.782Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
