@@ -53,7 +53,7 @@
 
 
 
-[Demo 参考代码](./demo1.py) ：你能读懂每行代码吗？
+[Demo 参考代码](./demos/crawl_xkcd.py) ：你能读懂每行代码吗？
 
 
 
@@ -62,3 +62,11 @@
 - 每个图片都有一个 `title` 属性，能否把它也顺便保存下来？
 - 你有没有过一些想法，不知道如何去实现，掌握了简单的爬虫技术后，是否变得可能？（如果感觉掌握的知识技能还不足以支撑实现，可向教练请教或者组队完成）
 - 你掌握了写程序解决问题的思路吗？是否从中掌握了新的思维方式？
+
+### Demo 2
+
+[LibreOJ](https://loj.ac) 是一个 Online Judge 网站。尝试获取上面的题库？
+
+[Demo 2 参考代码 - 作者：张未波](./demos/crawl_loj.py)
+
+爬虫使用了正则表达式提取文本。请尝试通过阅读文档学习正则表达式：[Python Regular Expression HOWTO](https://docs.python.org/3.7/howto/regex.html)。
